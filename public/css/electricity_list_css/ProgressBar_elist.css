@@ -1,0 +1,20 @@
+.rectangle-elist {
+    width: 10px;
+    height: 9px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.filled-elist {
+    background-color: green;
+}
+
+.empty-elist {
+    background-color: lightgray;
+}
+
+.progress-bar-elist {
+    display: flex;
+    flex-wrap: wrap;
+}

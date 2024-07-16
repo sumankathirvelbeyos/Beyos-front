@@ -1,0 +1,712 @@
+.mobile-combustion-data-entry-child-off {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 84px;
+  height: 1024px;
+}
+.white-variation-11-off {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 57px;
+  height: 55px;
+  object-fit: cover;
+}
+.mobile-combustion-data-entry-item-off {
+  position: absolute;
+  top: 38px;
+  left: 1354px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+.user-5-11-off {
+  position: absolute;
+  top: 55px;
+  left: 1315px;
+  width: 44px;
+  height: 43px;
+  object-fit: cover;
+}
+.data-management-1-icon1-off,
+.data-management-2-icon1-off,
+.data-management-4-icon1-off {
+  position: absolute;
+  top: 281px;
+  left: 29px;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+.data-management-2-icon1-off,
+.data-management-4-icon1-off {
+  top: 405px;
+  left: 31px;
+}
+.data-management-2-icon1-off {
+  top: 209px;
+  left: 29px;
+  height: 37px;
+}
+.co21-off {
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  display: inline-block;
+  width: 85.1px;
+  height: 67px;
+}
+.group-item-off {
+  position: absolute;
+  top: 0;
+  left: 42.9px;
+  width: 0;
+  height: 21.8px;
+  object-fit: contain;
+}
+.co2-group-off {
+  position: absolute;
+  top: 332px;
+  left: 25.6px;
+  width: 85.1px;
+  height: 71.5px;
+  font-size: var(--font-size-9xl);
+  color: var(--white);
+}
+
+
+.header1-off {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 1.3px solid var(--blues-gray2);
+  font-family: var(--font-inter);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-2xs) var(--padding-lg);
+  z-index: 1;
+}
+
+.dropdown-box1-off {
+  position: absolute;
+  top: 58px;
+  left: 1100px;
+  width: 195px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--drop-menu-menu-size);
+  color: var(--black);
+}
+.reporting-year2-off {
+  position: absolute;
+  top: 58px;
+  left: 982px;
+  font-size: var(--font-size-smi);
+  font-weight: 500;
+  color: var(--color-silver-100);
+  display: inline-block;
+  width: 207px;
+  height: 26px;
+}
+.data-management-3-icon1-off {
+  position: absolute;
+  top: 133px;
+  left: 27px;
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+.left-arrow-in-circular-button-icon1-off {
+  position: absolute;
+  top: 65px;
+  left: 148px;
+  width: 44px;
+  height: 43px;
+  object-fit: cover;
+}
+.mobile-combustion-data-entry-inner-off {
+  position: absolute;
+  top: 121px;
+  left: 1015px;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 102px;
+  height: 105px;
+}
+.mobile-combustion-data-entry-child1-off,
+.mobile-combustion-data-entry-child2-off {
+  position: absolute;
+  top: 490px;
+  left: 168px;
+  font-family: var(--font-inter);
+  border-radius: var(--br-2xs);
+  background-color: var(--white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 182px;
+  height: 44px;
+}
+.row-bar-off{
+  /* margin-top:900px; */
+}
+.data-row-off {
+  /* top:1000px; */
+  margin-left:140px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  /* align-items: center; */
+  /* margin-bottom: 50px; */
+}
+
+.mobile-combustion-data-entry-child1-vehicle-off,
+.offsets-page-child15-off  {
+
+  margin-left:12px;
+  font-family: var(--font-inter);
+  border-radius: var(--br-2xs);
+  background-color: var(--white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 260px;
+  height: 44px;
+ 
+}
+.mobile-combustion-data-entry-child2-off {
+  left: 362px;
+  width: 122px;
+}
+
+
+.type-of-offset-off {
+  position: absolute;
+  display: inline-block;
+  top: 370px;
+  left: 845px;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-100);
+  width: 140px;
+  height: 22px;
+}
+
+.mobile-combustion-data-entry-child3-consumption-off,
+.mobile-combustion-data-entry-child4-si-off,
+.mobile-combustion-data-entry-child2-fuel-off,
+.offsets-page-child15-off {
+  margin-left: 12px;
+  font-family: var(--font-inter);
+  border-radius: var(--br-2xs);
+  background-color: var(--white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 193px;
+  height: 44px;
+}
+
+.offsets-page-child15-off {
+  left: 1150px;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  /* width: 114px;
+  height: 36px; */
+}
+.mobile-combustion-data-entry-child4-si-off {
+  left: 700px;
+  width: 193px;
+}
+.mobile-combustion-data-entry-child2-fuel-off{
+  left:920px;
+  width:193px;
+}
+
+.mobile-combustion-data-entry-child3-3-off,
+.mobile-combustion-data-entry-child4-4-off {
+  position: absolute;
+  top:550px;
+  left: 495px;
+  font-family: var(--font-inter);
+  border-radius: var(--br-2xs);
+  background-color: var(--white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 94px;
+  height: 44px;
+}
+.mobile-combustion-data-entry-child4-4-off {
+  left: 600px;
+  width: 76px;
+}
+.data-management-5-icon-off {
+  position: absolute;
+  top: 219px;
+  left: 190px;
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+}
+
+.type-of-electricity2-off {
+  position: absolute;
+  top: 420px;
+  left: 570px;
+  font-family: var(--font-inter);
+  display: inline-block;
+  width: 131px;
+  height: 21px;
+}
+.type-of-electricity2-off{
+  top: 370px;
+  left: 168px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-100);
+  width: 330px;
+}
+
+.offsets-page-child15-off {
+  /* position: absolute; */
+  margin-left:54px;
+  left: 1080px;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 114px;
+  height: 36px;
+}
+
+.add-entry2-off {
+left: 1130px;
+font-family: var(--drop-menu-menu);
+font-size: var(--font-size-2xs);
+display: inline-block;
+color: var(--white);
+width: 66px;
+height: 17px;
+}
+.offsets-page-child15next-re {
+  /* position: absolute; */
+ 
+  left: 1080px;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 114px;
+  height: 36px;
+  margin-top: -30px;
+}
+.offsets-page-child15next-off {
+  left: 1150px;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  font-family: var(--font-inter);
+  border-radius: var(--br-2xs);
+  background-color: var(--white);
+  border: 1.5px solid var(--color-lightgray);
+  
+  box-sizing: border-box;
+  width: 104px;
+  height: 35px;
+  margin-left:1184px;
+  /* width: 114px;
+  height: 36px; */
+}
+.add-entry2next-off{
+  left: 1130px;
+  font-family: var(--drop-menu-menu);
+  font-size: var(--font-size-2xs);
+  display: inline-block;
+  color: var(--white);
+  width: 66px;
+  height: 17px;
+  }
+.add-3-icon-off {
+left: 1110px;
+width: 14px;
+height: 16px;
+object-fit: cover;
+margin-bottom: -3px;
+}
+.line-div-off {
+
+box-sizing: border-box;
+position: absolute;
+margin-bottom: -62px;
+border-top: 1px solid var(--color-forestgreen);
+width: 1090px;
+height: 2px;
+}
+.offsets-page-child24-off {
+position: absolute;
+top: 199px;
+left: 168px;
+background: linear-gradient(180deg, #014762, #448e1f);
+width: 133px;
+height: 126px;
+}
+
+.facility1-off,
+.fuel1-off,
+.quantity2-off {
+  position: absolute;
+  display: inline-block;
+}
+.fuel1-off {
+  top: 370px;
+  left: 438px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-100);
+  width: 128px;
+  height: 21px;
+}
+
+.Units-off{
+  top: 460px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkslategray-100);
+  width: 160px;
+  height: 21px;
+}
+
+.Units-off {
+  left: 645px;
+  top:370px;
+}
+.Units-off,
+.div16-off,
+.month1-off,
+.mtco21-off {
+  position: absolute;
+  display: inline-block;
+}
+
+.mtco21-off {
+  width: 577px;
+  height: 299px;
+}
+
+.mtco21-off {
+  top: 201px;
+  left: 1132px;
+  font-size: 24px;
+  color: var(--color-forestgreen-100);
+}
+.cart-12-icon1-off {
+  position: absolute;
+  top: 132px;
+  left: 1028px;
+  width: 77px;
+  height: 77px;
+  object-fit: cover;
+}
+.offsets-off{
+  position: absolute;
+  top: 146px;
+  left: 167px;
+  font-size: var(--font-size-17xl);
+  display: inline-block;
+  color: var(--color-darkslategray-100);
+  width: 1001px;
+  height: 123px;
+}
+
+.mobile-combustion-data-entry-child12-off {
+  /* position: absolute;
+  top: 618px;
+  left: 815px; */
+  margin-left: 170px;
+  margin-top: 30px;
+  border-radius: var(--br-11xl-5);
+  padding: 8px;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 123px;
+  /* height: 20px; */
+}
+.add-data-off {
+
+  width: 73px;
+  height: 16px;
+  margin-left: 8px;
+  font-size: var(--font-size-2xs);
+display: inline-block;
+color: var(--white);
+  
+}
+.add-6-icon-off {
+  /* position: absolute;
+  top: 620px;
+  left: 820px; */
+  /* margin-left: ; */
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+.vector-icon-off {
+  position: absolute;
+  top: 233px;
+  left: 1012px;
+  border-radius: var(--br-6xs);
+  width: 104px;
+  height: 95px;
+}
+.mobile-combustion-data-entry-child13-off,
+.mobile-combustion-data-entry-child14-off {
+  position: absolute;
+  top: 230px;
+  left: 1050px;
+  border-radius: var(--br-6xs);
+  width: 93px;
+  height: 98px;
+}
+.mobile-combustion-data-entry-child14-off {
+  top: 229px;
+  left: 1090px;
+  width: 88px;
+  height: 99px;
+}
+.ellipse-div-off {
+  position: absolute;
+  top: 210px;
+  left: 1010px;
+  border-radius: 50%;
+  background-color: #82b086;
+  width: 14px;
+  height: 13px;
+}
+.mobile-combustion-data-entry-child15-off,
+.mobile-combustion-data-entry-child16-off {
+  position: absolute;
+  top: 190px;
+  left: 1010px;
+  border-radius: 50%;
+  background-color: #4c876a;
+  width: 14px;
+  height: 13px;
+}
+.mobile-combustion-data-entry-child16-off {
+  top: 170px;
+  background-color: #256d3f;
+  height: 13px;
+}
+
+.div-off,
+.mtco2-off {
+position: absolute;
+left: 1196px;
+display: inline-block;
+width: 619px;
+}
+.div-off {
+top: 240px;
+font-size: 48px;
+font-weight: 800;
+background: linear-gradient(180deg, #014762, #448e1f);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+height: 320px;
+}
+.mtco2-off {
+top: 300px;
+font-size: 20px;
+color: var(--color-forestgreen);
+height: 321px;
+}
+.add-8-icon-off {
+  position: absolute;
+  top: 250px;
+  left: 1031px;
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+}
+
+input[type="file"] {
+  position: absolute;
+  top: 538px;
+  left: 813px;
+  border-radius: var(--br-9xs);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  width: 84px;
+  height: 31px;
+}
+
+
+
+.mobile-combustion-data-entry-off {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+  color: var(--color-gray);
+  font-family: var(--drop-menu-menu);
+}
+
+
+.scrollable-off{
+  /* padding-left: 15px; */
+  /* margin-top: 420px; */
+  /* margin-top: 500px; */
+  width:70%;
+  height: 300px; 
+  overflow-y: auto;
+
+}
+
+.scroll-wrapper-off {
+  width: 3px; 
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  background-color: #f1f1f1;
+  border-radius: 13px;
+
+}
+
+/* Change scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+  background-color: #028f25;
+  border-radius: 13px;
+  /* padding: 4px; */
+}
+
+.dynamic-rows-container-off{
+  margin-top: 390px;
+  width:1300px;
+  margin-left:12px;
+
+
+}
+
+
+.scrollable-off {
+width: 80%;
+height: 200px;
+overflow-y: auto;
+}
+
+.dynamic-rows-container-off {
+width: 1400px;
+/* Adjust other styles as needed */
+}
+
+.dynamic-rows-container-off {
+  max-height: calc(2 * (60px + 6px)); /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.dynamic-rows-off {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 20px; /* Adjust as needed to accommodate scrollbar width */
+}
+
+.row-bar-off {
+  display: flex;
+  flex-direction: row;
+  /* margin-bottom: 10px; Adjust spacing between rows as needed */
+}
+
+/* new */
+
+
+ .scrollable-off {
+  width: 70%;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  position: relative;
+  padding-right: 20px; /* to accommodate scrollbar width */
+}
+
+.dynamic-rows-container-off {
+  width: 85%;
+  overflow-y: auto;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  position: relative;
+}
+
+.dynamic-rows-off {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.row-bar-off {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Ensure the row spans the full width */
+  position: relative;
+  padding-bottom: 2px; /* Adjust this value as necessary */
+  /* Adjust spacing between rows as needed */
+}
+
+.line-div-off {
+  box-sizing: border-box;
+  border-top: 1px solid var(--color-forestgreen);
+  width: 100%; /* Ensure it spans the full width */
+  margin-top: 10px; /* Create space between the row content and the line */
+}
+
+/* Ensure the row-bar has some padding or margin to create space for the line */
+
+/* new */
+
+
+.scrollable-off {
+width: 70%;
+height: 200px;
+overflow-y: auto;
+overflow-x: hidden; /* Hide the horizontal scrollbar */
+position: relative;
+padding-right: 20px; /* to accommodate scrollbar width */
+}
+
+.dynamic-rows-container-off {
+width: 92%;
+overflow-y: auto;
+overflow-x: hidden; /* Hide the horizontal scrollbar */
+position: relative;
+}
+
+.dynamic-rows-off {
+width: 100%;
+box-sizing: border-box;
+}
+
+.row-bar-off {
+display: flex;
+flex-direction: row;
+width: 100%; /* Ensure the row spans the full width */
+position: relative;
+padding-bottom: 2px; /* Adjust this value as necessary */
+ /* Adjust spacing between rows as needed */
+}
+
+.line-div-off {
+box-sizing: border-box;
+border-top: 1px solid var(--color-forestgreen);
+width: 90%; /* Ensure it spans the full width */
+margin-top: 10px; /* Create space between the row content and the line */
+}
+
+/* Ensure the row-bar has some padding or margin to create space for the line */
+

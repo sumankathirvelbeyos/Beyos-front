@@ -1,0 +1,958 @@
+.frameChild {
+  width: 94px;
+  height: 1024px;
+  position: relative;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  display: none;
+}
+.settings1Icon,
+.whiteVariation1 {
+  width: 57px;
+  height: 55px;
+  position: relative;
+  object-fit: contain;
+  z-index: 1;
+}
+.settings1Icon {
+  height: 49px;
+  width: 49px;
+  object-fit: cover;
+}
+.settings1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 2px 0 6px;
+}
+.rectangleParent {
+  height: 1024px;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-46xl) 22px var(--padding-46xl) var(--padding-mini);
+  box-sizing: border-box;
+  gap: 54px;
+}
+.user51 {
+  height: 48px;
+  width: 44px;
+  position: relative;
+  object-fit: cover;
+}
+.user51Wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 47px;
+}
+.beyos {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.beyosWrapper {
+  height: 38.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-family: var(--font-poppins);
+}
+.dataCollection {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+  top:50px;
+}
+.dataCollectionTitle {
+  width: 691px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 77px 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-poppins);
+}
+.noOfFacilitiesToBeInclud {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.noOfFacilitiesContainer {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.facilitiesCountTitle {
+  width: 1054px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameItem {
+  width: 402px;
+  position: relative;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  height: 44px;
+  display: none;
+}
+.selectTheNo {
+  width: 178px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-2xs);
+  background-color: transparent;
+  height: 13px;
+  position: relative;
+  color: var(--color-gray);
+  text-align: left;
+  display: inline-block;
+  z-index: 1;
+}
+/* .facilitiesIcon {
+  width: 16.5px;
+  height: 7.5px;
+  position: relative;
+  z-index: 1;
+} */
+.noofffacilities{
+  /* Rectangle 644 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 402px;
+height: 44px;
+left: 221px;
+top: 247px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+
+.facilitiesSelection,
+.facilitiesWrapper,
+.rectangleGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.facilitiesWrapper {
+  height: 12.5px;
+  width: 16.5px;
+  flex-direction: column;
+  padding: 5px 0 0;
+}
+.facilitiesSelection,
+.rectangleGroup {
+  flex-direction: row;
+  max-width: 100%;
+}
+/* .rectangleGroup {
+  height: 44px;
+  flex: 1;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-lightgray);
+  padding: var(--padding-mini) var(--padding-mid) 16px;
+  gap: 166px;
+  min-width: 241px;
+} */
+.facilitiesSelection {
+  width: 422px;
+  padding: 0 var(--padding-xl) 61px 0;
+}
+.reportingYearMethodology {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.reportingYearMethodologyContainer {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.baseYearSelection {
+  width: 1072px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) var(--padding-mini) 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.selectTheYearsToBeInclude {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.selectTheYearsContainer {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.baseYearSelection1 {
+  width: 1072px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) var(--padding-5xl) 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.selectYourBaseYearNoteC {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-2xl);
+}
+.baseyearr{
+  /* Rectangle 647 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 402px;
+height: 44px;
+left: 221px;
+top: 539px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.selectYourBaseContainer {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.baseYearSelection2 {
+  width: 1072px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) var(--padding-5xl) 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  max-width: 100%;
+}
+.boundarySettingPage,
+.boundarySettingPageInner,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.boundarySettingPageInner {
+  flex: 1;
+  flex-direction: column;
+  padding: 64px 0 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 221px);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.boundarySettingPage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  gap: 127px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 900px) {
+  .rectangleParent {
+    display: none;
+  }
+  .beyos {
+    font-size: 32px;
+  }
+  .boundarySettingPageInner {
+    padding-top: 42px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .boundarySettingPage {
+    gap: 63px;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .beyos {
+    font-size: var(--font-size-5xl);
+  }
+  .dataCollection {
+    font-size: 19px;
+  }
+  .boundarySettingPageInner {
+    padding-top: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+  .boundarySettingPage {
+    gap: 32px;
+  }
+}
+
+
+
+
+
+/*Frame Component*/
+.checkboxInstances {
+  margin: 0;
+  height: 20px;
+  width: 19px;
+}
+.blankAndCheckbox {
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 30px;
+  max-width: 100%;
+}
+.checkboxPair {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+  flex-shrink: 0;
+  debug_commit: 69da668;
+  max-width: 100%;
+}
+.frameInput {
+  margin: 0;
+  height: 20px;
+  width: 19px;
+}
+.blankCell,
+.blankOne {
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.blankOne {
+  z-index: 3;
+}
+.blankTwo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: -130px;
+  display: inline-block;
+  z-index: 4;
+}
+.doubleBlank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1052px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkbox {
+  margin: 0;
+  position: absolute;
+  top: 2px;
+  left: 94px;
+  width: 19px;
+  height: 18px;
+  z-index: 4;
+}
+.nestedCheckbox {
+  height: 100%;
+  width: 792px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.blankCellParent,
+.checkboxPair1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.blankCellParent {
+  position: relative;
+  min-width: 684px;
+}
+.checkboxPair1 {
+  flex-wrap: wrap;
+  gap: var(--gap-mid);
+  flex-shrink: 0;
+  debug_commit: 69da668;
+  margin-left: -958px;
+}
+.frameInput1 {
+  margin: 0;
+  height: 20px;
+  width: 19px;
+}
+.checkbox1,
+.div {
+  position: absolute;
+}
+.div {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 1052px;
+  height: 40px;
+  z-index: 2;
+}
+.checkbox1 {
+  margin: 0;
+  top: 2px;
+  left: 94px;
+  width: 19px;
+  height: 18px;
+  z-index: 3;
+}
+.parent {
+  height: 40px;
+  flex: 1;
+  position: relative;
+  min-width: 599px;
+  max-width: 100%;
+}
+.baseYearCheckbox {
+  width: 958px;
+  flex-wrap: wrap;
+  gap: var(--gap-mid);
+  flex-shrink: 0;
+  debug_commit: 69da668;
+  margin-left: -958px;
+}
+.baseYearCheckbox,
+.checkboxGrid,
+.checkboxGridWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.checkboxGrid {
+  flex: 1;
+}
+.checkboxGridWrapper {
+  align-self: stretch;
+  padding: 0 0 var(--padding-26xl) var(--padding-12xs);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 900px) {
+  .blankCellParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .parent {
+    min-width: 100%;
+  }
+}
+
+
+
+
+
+/*baseyearinput*/
+.baseYearDropdown {
+  align-self: stretch;
+  height: 44px;
+}
+.emissionsInput {
+  width: 391px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-8xl);
+}
+.scope1{
+  /* Scope 1 Emissions */
+
+position: absolute;
+width: 133px;
+height: 20px;
+left: 221px;
+top: 608px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+
+color: #448E1F;
+}
+.scope1input{
+  /* Rectangle 648 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 182px;
+height: 44px;
+left: 221px;
+top: 624px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+}
+.scope2{
+  /* Scope 2 Emissions */
+
+position: absolute;
+width: 133px;
+height: 20px;
+left: 430px;
+top: 608px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+
+color: #448E1F;
+}
+.scope2input{
+  /* Rectangle 649 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 182px;
+height: 44px;
+left: 430px;
+top: 624px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+}
+.scope3{
+  /* Scope 3 Emissions */
+
+position: absolute;
+width: 133px;
+height: 20px;
+left: 639px;
+top: 608px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+
+color: #448E1F;
+}
+.scope3input{
+  /* Rectangle 650 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 182px;
+height: 44px;
+left: 639px;
+top: 624px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+}
+.baseYearAndEmissions,
+.baseYearDropdownParent,
+.emissionsInput {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.baseYearDropdownParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xl);
+}
+.baseYearAndEmissions {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-base);
+}
+.baseYearAndEmissionsWrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-mid);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.addNextButtonsChild {
+  height: 41px;
+  width: 123px;
+  position: relative;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  display: none;
+  top:634px;
+}
+.add1Icon {
+  width: 14px;
+  height: 17px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.addButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.next {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  z-index: 1;
+  margin-top: 6px;
+  margin-left: 22px;
+  
+}
+.addNextButtons,
+.baseYearInput {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.addNextButtons {
+  margin-top: 65px;
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) 0 var(--padding-2xs) var(--padding-8xl);
+  background-color: transparent;
+  width: 103px;
+  height:30px;
+  border-radius: var(--br-11xl-5);
+  background: linear-gradient(180deg, #014762, #448e1f);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.baseYearInput {
+  width: 1097px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-forestgreen);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 900px) {
+  .addNextButtons,
+  .baseYearDropdown {
+    align-self: stretch;
+    width: auto;
+    min-width: 100%;
+  }
+  .addNextButtons {
+    text-align: center;
+    min-width: 123;
+  }
+  .baseYearInput {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 675px) {
+  .baseYearAndEmissions {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .emissionsInput {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+/*Reporting period*/
+.calendarYearCheckbox {
+  margin: 0;
+  height: 20px;
+  width: 19px;
+}
+.starting{
+  
+}
+.ending{
+
+}
+.calendarYear {
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 84px;
+  max-width: 100%;
+}
+.calendarYearSelection {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+  max-width: 100%;
+}
+.checkbox10 {
+  margin: 0;
+  width: 89px;
+  height: 18px;
+  position: relative;
+  z-index: 1;
+}
+.checkboxWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.fiscalYear {
+  align-self: stretch;
+  height: 40px;
+  width: 100px;
+  left: -40px;
+  margin-top: -10px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 6;
+}
+.fiscalYearTitle {
+  width: 1082px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.startingMonth {
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  display: inline-block;
+  width: 178px;
+  height: 22px;
+  z-index: 2;
+}
+.monthInputChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.monthInputItem {
+  position: absolute;
+  top: 20px;
+  left: 107px;
+  width: 16.5px;
+  height: 7.5px;
+  z-index: 3;
+}
+.monthInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 137px;
+  height: 44px;
+}
+.startingMonthParent {
+  height: 44px;
+  width: 1088px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 104%;
+  margin-left: -928px;
+}
+.endingMonth {
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  display: inline-block;
+  width: 178px;
+  height: 22px;
+  z-index: 4;
+}
+.parent10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.endingMonthParent {
+  height: 44px;
+  width: 195px;
+  position: relative;
+  margin-left: -928px;
+}
+.ending{
+  left: 90px;
+}
+.fiscalYearTitleParent {
+  flex: 1;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 684px;
+  max-width: 100%;
+}
+.calendarFiscalYear,
+.fiscalYearTitleParent,
+.frameParent10,
+.reportingPeriod {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.frameParent10 {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--gap-mid);
+  max-width: 100%;
+  margin-left: -864px;
+  font-size: var(--font-size-2xs);
+  color: var(--color-gray);
+}
+.calendarFiscalYear,
+.reportingPeriod {
+  flex-shrink: 0;
+}
+.calendarFiscalYear {
+  width: 1312px;
+  align-items: flex-end;
+  max-width: 108%;
+}
+.reportingPeriod {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-39xl) var(--padding-12xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 900px) {
+  .fiscalYearTitleParent {
+    min-width: 100%;
+  }
+}
+
+

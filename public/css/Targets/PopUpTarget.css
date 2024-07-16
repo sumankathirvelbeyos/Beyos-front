@@ -1,0 +1,286 @@
+/* styles.css */
+.set-target-popup-targetpage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px;
+    width: 950px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    display: none;
+  }
+  
+  .set-target-popup-targetpage.open {
+    display: block;
+  }
+  
+  .set-target-popup-targetpage.closed {
+    display: none;
+  }
+  
+  .popup-overlay-targetpage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+  
+  .popup-overlay-targetpage.open {
+    display: block;
+  }
+  
+  .popup-overlay-targetpage.closed {
+    display: none;
+  }
+
+  .firefly-generate-an-image-of-s-targetpage{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 209px;
+  height: 560px;
+  object-fit: cover;
+  }
+
+  .targets_popUp-targetpage{
+    position: absolute;
+    top: 106px;
+    left: 252px;
+    font-size: 40px;
+    display: inline-block;
+    width: 904px;
+    height: 111px;
+    color: var(--black);
+
+}
+.reduction-from-base-targetpage,
+.scope-1-emissions-targetpage,
+.select-base-year-targetpage,
+.select-target-type-targetpage,
+.select-target-year-targetpage {
+  position: absolute;
+  top: 219px;
+  left: 254px;
+  font-weight: 600;
+  display: inline-block;
+  width: 177px;
+  height: 26px;
+}
+.select-base-year-targetpage,
+.select-target-year-targetpage {
+  position: absolute;
+  top: 219px;
+  left: 254px;
+  font-weight: 600;
+  display: inline-block;
+  width: 177px;
+  height: 26px;
+}
+
+
+.reduction-from-base-targetpage,
+  .scope-1-emissions-targetpage,
+  .select-base-year-targetpage,
+  .select-target-year-targetpage {
+    top: 300px;
+  }
+  .reduction-from-base-targetpage,
+  .scope-1-emissions-targetpage,
+  .select-target-year-targetpage {
+    top: 380px;
+  }
+  .reduction-from-base-targetpage,
+  .scope-1-emissions-targetpage {
+    left: 455px;
+  }
+  .scope-1-emissions-targetpage {
+    top: 300px;
+  }
+  .scope-2-emissions-targetpage {
+    position: absolute;
+    left: 650px;
+    width: 177px;
+  }
+  .scope-2-emissions-targetpage {
+    top: 300px;
+    font-weight: 600;
+    display: inline-block;
+    height: 26px;
+  }
+
+
+.header0-targetpage {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 1.3px solid var(--blues-gray2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+  margin-left:-30px;
+  z-index: 1;
+  width: 177px;
+    height: 42px;
+}
+
+
+.dropdown-box1-targetpage,
+  .dropdown-box2-targetpage,
+  .targets_popUp-targetpage {
+    position: absolute;
+    font-family: var(--drop-menu-menu);
+  }
+  .dropdown-box2-targetpage {
+    top: 255px;
+    left: 282px;
+    width: 155px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--drop-menu-menu-size);
+    color: var(--black);
+  }
+  .dropdown-box1-targetpage {
+    top: 324px;
+  }
+  .dropdown-box0-targetpage,
+  .dropdown-box1-targetpage {
+    left: 284px;
+    width: 150px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--drop-menu-menu-size);
+    color: var(--black);
+  }
+  .dropdown-box0-targetpage {
+    position: absolute;
+    top: 400px;
+    font-family: var(--drop-menu-menu);
+  }
+  .set-target-popup-targetpage {
+    /* width: 971px;
+    max-width: 100%;
+    height: 637px; */
+    text-align: left;
+    font-size: var(--font-size-2xs);
+    color: var(--color-forestgreen);
+    font-family: var(--font-sarabun);
+  }
+  .set-target-popup-item-targetpage {
+    position: absolute;
+    top: 319px;
+    left: 454px;
+    border-radius: var(--br-5xs);
+    background-color: var(--white);
+    border: 1.2px solid var(--color-darkgray-200);
+    box-sizing: border-box;
+    width: 177px;
+    height: 43px;
+    font-size: var(--drop-menu-menu-size);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-darkgray-100);
+    display: inline-block;
+  }
+  .rectangle-div-mtco2e-targetpage,
+  .scope-2-emissions-targetpage {
+    position: absolute;
+    left: 650px;
+    width: 177px;
+  }
+
+  .rectangle-div-mtco2e-targetpage{
+    top: 319px;
+    left:520px;
+    border-radius: var(--br-5xs);
+    background-color: var(--white);
+    border: 1.2px solid var(--color-darkgray-200);
+    box-sizing: border-box;
+    height: 43px;
+    font-size: var(--drop-menu-menu-size);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-darkgray-100);
+    display: inline-block;
+    margin-left: 130px;
+  }
+
+  .set-target-popup-inner-targetpage {
+    position: absolute;
+    top: 398px;
+    left: 455px;
+    border-radius: var(--br-5xs);
+    background-color: var(--white);
+    border: 1.2px solid var(--color-darkgray-200);
+    box-sizing: border-box;
+    width: 177px;
+    height: 44px;
+    font-size: var(--drop-menu-menu-size);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-darkgray-100);
+    display: inline-block;
+  }
+
+  .set-target-popup-child1-targetpage {
+    position: absolute;
+    top: 498px;
+    left: 244px;
+    border-radius: 9px;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    width: 185px;
+    height: 42px;
+  }
+
+  .set-target-1-targetpage {
+    position: absolute;
+    top: 511px;
+    left: 300px;
+    display: inline-block;
+    font-family: var(--drop-menu-menu);
+    color: var(--white);
+    width: 127px;
+    height: 16px;
+  }
+
+  .add-4-icon_-targetpage {
+    position: absolute;
+    top: 512px;
+    left: 280px;
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+  }
+
+
+  .close-icon-targetpage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .close-icon:hover {
+    opacity: 1;
+  }
+  

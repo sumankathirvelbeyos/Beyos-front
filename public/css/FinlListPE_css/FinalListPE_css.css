@@ -1,0 +1,866 @@
+
+.frame-child-pe-list {
+    /* width: 94px;
+    height: 1024px; */
+    position: relative;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    display: none;
+    z-index: 0;
+  }
+  .white-variation-1-pe-list {
+    height: 55px;
+    width: 57px;
+    position: relative;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .white-variation-1-wrapper-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+  }
+  .data-management-3-icon-pe-list {
+    height: 42px;
+    width: 42px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .data-management-3-wrapper-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1px 0 1.4px;
+  }
+  .data-management-2-icon-pe-list {
+    height: 37px;
+    width: 38px;
+    position: relative;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .data-management-2-wrapper-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 3px 7.5px 3.4px;
+  }
+  .frame-input-pe-list {
+    margin: 0;
+    width: 44.8px;
+    height: 38px;
+  }
+  .co2-pe-list {
+    align-self: stretch;
+    height: 47px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .frame-group-pe-list {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 24.5px;
+  }
+  .frame-group-pe-list,
+  .frame-parent-pe-list,
+  .frame-wrapper-pe-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent-pe-list {
+    width: 85.1px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .frame-wrapper-pe-list {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 7px 0 10.6px;
+  }
+  .frame-item-pe-list {
+    width: 0;
+    height: 21.8px;
+    position: absolute;
+    margin: 0 !important;
+    top: 422px;
+    right: 25.5px;
+    object-fit: contain;
+    z-index: 2;
+  }
+  .data-management-4-icon-pe-list {
+    height: 38px;
+    width: 38px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .data-management-4-wrapper-pe-list,
+  .rectangle-parent-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 10px 0 16px;
+  }
+  .rectangle-parent-pe-list {
+    width: 65px;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    flex-direction: column;
+    padding: 55px 0px 471px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 21.5px;
+  }
+  .left-arrow-in-circular-button-icon-pe-list {
+    
+    height: 43px;
+    width: 44px;
+    position: relative;
+    object-fit: cover;
+    min-height: 43px;
+  }
+  .reporting-year-pe-list {
+    align-self: stretch;
+    position: relative;
+    font-weight: 500;
+    z-index: 1;
+    
+  }
+  .reporting-year-wrapper-pe-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0 0;
+    margin-top: -30px;
+  }
+
+  .menu-label1-pe-list {
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 95px;
+  }
+  .menu-label-pe-list,
+  .menu-label-wrapper-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .menu-label-wrapper-pe-list {
+    flex-direction: column;
+    padding: 1px 0 0;
+  }
+  .iconsregularchevron-down-s-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+  }
+  .header-pe-list {
+    margin-top: -42px;
+    align-self: stretch;
+    height: 44.6px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1.3px solid #b8bbc2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 11px 19px 11px 17px;
+    flex-shrink: 0;
+    debug_commit: 1de1738;
+    gap: 20px;
+  }
+  .iconsregularplus1-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    display: none;
+    min-height: 20px;
+  }
+
+  .iconsregularchevron-down-s1-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    min-height: 20px;
+  }
+  .item-hover-pe-list {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 11px 24px;
+    gap: 20px;
+  }
+  .iconsregularplus2-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    display: none;
+    min-height: 20px;
+  }
+
+ 
+  .iconsregularchevron-down-s2-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    min-height: 20px;
+  }
+  .item-hover1-pe-list {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 11px 24px;
+    gap: 20px;
+  }
+  .iconsregularplus3-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    display: none;
+    min-height: 20px;
+  }
+
+  .iconsregularchevron-down-s5-pe-list {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    min-height: 20px;
+  }
+  .item-hover4-pe-list,
+  .items-list-pe-list {
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+  }
+  .item-hover4-pe-list {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 11px 24px;
+    gap: 20px;
+  }
+  .items-list-pe-list {
+    flex: 1;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8px 0 0;
+  }
+  .dropdown-box-pe-list,
+  .items-frame-pe-list {
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .items-frame-pe-list {
+    align-self: stretch;
+    height: 1px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1px 0 0;
+    debug_commit: 1de1738;
+  }
+  .dropdown-box-pe-list {
+    height: 33px;
+    width: 195px;
+    flex-direction: column;
+    padding: 32px 0 0;
+    margin-left: -102px;
+    font-size: 12px;
+    color: #313144;
+  }
+  .dropdown-box-pe-list,
+  .frame-parent2-pe-list,
+  .frame-wrapper1-pe-list {
+    display: flex;
+    align-items: flex-start;
+  }
+  .frame-parent2-pe-list {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .frame-wrapper1-pe-list {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 2px;
+  }
+  .frame-inner-pe-list {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    margin: 0 !important;
+    top: -27px;
+    right: -16px;
+    border-radius: 50%;
+  }
+  .user-5-1-pe-list {
+    height: 43px;
+    width: 44px;
+    /* position: relative; */
+    object-fit: cover;
+    /* z-index: 1; */
+  }
+  .ellipse-parent-pe-list,
+  .frame-parent1-pe-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .ellipse-parent-pe-list {
+    align-items: flex-start;
+    position: relative;
+  }
+  .frame-parent1-pe-list {
+    width: 367px;
+    align-items: flex-end;
+    gap: 23px;
+    max-width: 100%;
+  }
+  .frame-div-pe-list,
+  .left-arrow-in-circular-button-parent-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .left-arrow-in-circular-button-parent-pe-list {
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .frame-div-pe-list {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 2px 0 0;
+    box-sizing: border-box;
+  }
+  .mobile-combustion-pe-list {
+    margin: 0;
+    flex: 1;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .mobile-combustion-wrapper-pe-list {
+    width: 1029px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .filter-1-icon-pe-list,
+  .status-pe-list {
+    position: absolute;
+    margin: 0 !important;
+  }
+  .filter-1-icon-pe-list {
+    width: 28px;
+    height: 29px;
+    top: 25px;
+    right: 18px;
+    object-fit: contain;
+  }
+  .status-pe-list {
+    top: -13px;
+    right: 273px;
+    display: inline-block;
+    min-width: 51px;
+    z-index: 1;
+  }
+  .reporting-year1-pe-list {
+    width: 146px;
+    right: 405px;
+    z-index: 1;
+  }
+  .emission-type-pe-list,
+  .facility-pe-list,
+  .reporting-year1-pe-list,
+  .responsibility-pe-list {
+    position: absolute;
+    margin: 0 !important;
+    top: -13px;
+    display: inline-block;
+  }
+  .responsibility-pe-list {
+    left: 484px;
+    min-width: 103px;
+    z-index: 1;
+  }
+  .emission-type-pe-list,
+  .facility-pe-list {
+    width: 141px;
+    left: 350px;
+    z-index: 2;
+  }
+  .emission-type-pe-list {
+    width: 146px;
+    left: 107px;
+    z-index: 1;
+  }
+  .rectangle-div-pe-list {
+    height: 94px;
+    width: 1194px;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #438d21;
+    box-sizing: border-box;
+    display: none;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .cart-10-icon-pe-list,
+  .cart-2-pe-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 28px;
+    z-index: 1;
+  }
+  .cart-10-icon-pe-list {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    z-index: 2;
+    margin-top: -12px;
+  }
+  .cart-2-parent-pe-list {
+    height: 39px;
+    width: 40px;
+    position: relative;
+  }
+  .company-owned-vehicles-pe-list {
+    align-self: stretch;
+    position: relative;
+    z-index: 1;
+  }
+  .company-owned-vehicles-usage-wrapper-pe-list {
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 0 0;
+    box-sizing: border-box;
+    margin-left: 15px;
+  }
+  .frame-parent5-pe-list,
+  .frame-wrapper2-pe-list {
+    display: flex;
+    align-items: flex-start;
+  }
+  .frame-parent5-pe-list {
+    width: 233px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .frame-wrapper2-pe-list {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px 0 0;
+    box-sizing: border-box;
+    min-width: 244px;
+    max-width: 100%;
+  }
+  .facility-1-pe-list {
+    align-self: stretch;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .facility-1-wrapper-pe-list {
+    width: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    margin-left: 100px;
+  }
+  .manoj-pe-list {
+    width: 145px;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .manoj-wrapper-pe-list {
+    width: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    margin-left: -40px;
+    text-align: center;
+  }
+  .div-pe-list {
+    width: 124px;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .wrapper-pe-list {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 20px 0 0;
+    box-sizing: border-box;
+    margin-left: -40px;
+  }
+  
+  .frame-wrapper3-pe-list,
+  .rectangle-container-pe-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rectangle-container-pe-list {
+    flex-direction: row;
+    gap: 2.2px;
+  }
+  .frame-wrapper3-pe-list {
+    width: 265px;
+    flex-direction: column;
+    padding: 12px 0 0;
+    box-sizing: border-box;
+    margin-left: -40px;
+  }
+  
+  .add-1-icon-pe-list {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .add-1-wrapper-pe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px 0 0;
+  }
+  .add-data-pe-list {
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    font-family: Poppins;
+    color: #fff;
+    text-align: left;
+    min-width: 68px;
+    z-index: 2;
+  }
+  .frame-button-pe-list {
+    cursor: pointer;
+    border: 0;
+    padding: 9px 13px 11px 18px;
+    background-color: transparent;
+    border-radius: 30.5px;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    gap: 6px;
+    z-index: 1;
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+  .frame-button-pe-list,
+  .rectangle-group-pe-list,
+  .status-parent-pe-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rectangle-group-pe-list {
+    flex: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #438d21;
+    box-sizing: border-box;
+    padding: 27px 2px 23px 3px;
+    max-width: 98%;
+    font-size: 10px;
+  }
+
+  .status-parent-pe-list {
+    width: 1194px;
+    position: relative;
+  }
+ 
+  
+  .company-owned-vehicles1-pe-list {
+    align-self: stretch;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .company-owned-vehicles-usage-container-pe-list {
+    width: 146px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 0 0;
+  }
+ 
+  .div1-pe-list {
+    width: 124px;
+    height: 23px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .container-pe-list {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 20px 0 0;
+    box-sizing: border-box;
+    margin-left: -40px;
+  }
+  
+  .rectangle-parent1-pe-list {
+    width: 1194px;
+    background-color: #fff;
+    border-bottom: 1px solid #438d21;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 26px 31px 22px 43px;
+    font-size: 10px;
+  }
+  .frame-parent4-pe-list {
+    flex: 1;
+    
+    flex-direction: column;
+    gap: 0.5px;
+    
+    margin-top: -13px;
+    padding-top: 13px;
+  }
+  .frame-child28-pe-list,
+  .frame-child29-pe-list {
+    position: absolute;
+    top: 0;
+    border-radius: 26px;
+  }
+  .frame-child28-pe-list {
+    left: 1px;
+    background-color: #d9d9d9;
+    width: 9px;
+    height: 481px;
+    display: none;
+  }
+  .frame-child29-pe-list {
+    left: 0;
+    background-color: #448e1f;
+    width: 11px;
+    height: 431px;
+    z-index: 1;
+  }
+  .rectangle-parent4-pe-list {
+    width: 11px;
+    height: 481px;
+    position: relative;
+    border-radius: 26px;
+    background-color: #d9d9d9;
+  }
+  .frame-wrapper6-pe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 14px 0 0;
+  }
+  .frame-container-pe-list,
+  .frame-footer-pe-list,
+  .frame-parent3-pe-list {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-footer-pe-list {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: left;
+    font-size: 13px;
+    color: #014762;
+    font-family: Poppins;
+  }
+  .frame-container-pe-list,
+  .frame-parent3-pe-list {
+    flex-direction: column;
+  }
+  .frame-parent3-pe-list {
+    align-items: flex-start;
+    padding: 0 0 0 12px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 75px;
+    font-size: 36px;
+    color: #014762;
+  }
+  .frame-container-pe-list {
+    align-items: flex-end;
+    gap: 88px;
+    text-align: left;
+    font-size: 13px;
+    color: #bbb;
+    font-family: Poppins;
+  }
+  .mobile-combustion-list-pe-list,
+  .mobile-combustion-list-inner-pe-list {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .mobile-combustion-list-inner-pe-list {
+    /* width: 1247px; */
+    flex-direction: column;
+    padding: 65px 0 0;
+    box-sizing: border-box;
+  }
+  .mobile-combustion-list-pe-list {
+    width: 1440px;
+    background-color: #fff;
+    /* overflow: hidden; */
+    flex-direction: row;
+    gap: 54px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 28px;
+    color: #fff;
+    font-family: Poppins;
+  }
+
+  .scrollable-pe-list{
+    /* margin-top: 20%;
+    margin-left: 14%; */
+    padding-left: 15px;
+    width:100%;
+    height: 300px; 
+    overflow-y: auto;
+  }
+
+  .scroll-wrapper-pe-list {
+    width: 3px; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  ::-webkit-scrollbar-pe-list {
+    background-color: #f1f1f1;
+    border-radius: 13px;
+  
+  }
+  
+  /* Change scrollbar thumb color */
+  ::-webkit-scrollbar-thumb-pe-list {
+    background-color: #028f25;
+    border-radius: 13px;
+    padding: 4px;
+  }
+  @media screen and (max-width: 1325px) {
+    .mobile-combustion-list-pe-list {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    .rectangle-parent-pe-list {
+      padding-bottom: 306px;
+    }
+    .mobile-combustion-list-inner-pe-list,
+    .rectangle-parent-pe-list {
+      padding-top: 42px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .mobile-combustion-pe-list {
+      font-size: 29px;
+    }
+    .frame-parent3-pe-list {
+      gap: 37px;
+    }
+    .frame-container-pe-list {
+      gap: 44px;
+    }
+    .mobile-combustion-list {
+      gap: 27px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .co2-pe-list {
+      font-size: 22px;
+    }
+    .rectangle-parent-pe-list {
+      padding-top: 27px;
+      padding-bottom: 199px;
+      box-sizing: border-box;
+    }
+    .left-arrow-in-circular-button-parent-pe-list {
+      flex-wrap: wrap;
+    }
+    .mobile-combustion-pe-list {
+      font-size: 22px;
+    }
+    .frame-parent3-pe-list {
+      gap: 19px;
+    }
+    .frame-container-pe-list {
+      gap: 22px;
+    }
+    .mobile-combustion-list-inner-pe-list {
+      padding-top: 27px;
+      box-sizing: border-box;
+    }
+  }
+  

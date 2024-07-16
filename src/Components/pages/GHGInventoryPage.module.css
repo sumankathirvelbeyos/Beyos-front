@@ -1,0 +1,1049 @@
+.beyos{
+  /* BeyOS */
+
+position: absolute;
+width: 133px;
+height: 60px;
+left: 221px;
+top: 100px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.facility{
+  /* 001 - FACILITY 1 */
+
+position: absolute;
+width: 962px;
+height: 118px;
+left: 198px;
+top: 188px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #014762;
+
+
+}
+.rectangle{
+  /* Rectangle 1 */
+
+position: absolute;
+width: 94px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 95.83%);
+
+}
+.select{
+  /* Select the Equipments in the above identified facility that use fuel for combustion activities (Energy & Utility) */
+
+position: absolute;
+width: 1012px;
+height: 35px;
+left: 201px;
+top: 282px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+
+.checkbox1{
+
+
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 201px;
+top: 334px;
+
+
+
+}
+
+.boiler{
+/* Boiler */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 229px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox2{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 310px;
+top: 334px;
+
+
+}
+.furnace{
+  /* Furnace */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 335px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox3{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 454px;
+top: 334px;
+
+
+}
+.dryer{
+  /* Dryer */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 479px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox4{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 623px;
+top: 334px;
+
+
+}
+.power{
+  /* Power Generator */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 651px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox5{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 864px;
+top: 334px;
+
+
+}
+.thermic{
+  /* Thermic Fluid Heater */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 889px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox6{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1098px;
+top: 334px;
+
+
+}
+.thermal{
+  /* Thermal Oxidizers */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1123px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox7{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 201px;
+top: 394px;
+
+
+}
+.kiln{
+  /* Kiln */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 226px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox8{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 310px;
+top: 394px;
+
+
+}
+.flares{
+  /* Flares */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 335px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox9{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 454px;
+top: 394px;
+
+
+}
+.incinerator{
+  /* Incinerator */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 479px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox10{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 623px;
+top: 394px;
+
+
+}
+.process{
+  /* Process Heater/Oven */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 648px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox11{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 864px;
+top: 394px;
+
+
+}
+.combustion{
+  /* Combustion Turbine */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 889px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox12{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1098px;
+top: 394px;
+
+
+}
+.others{
+  /* Others */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1126px;
+top: 391px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.type1{
+  /* Rectangle 644 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 148px;
+height: 35px;
+left: 201px;
+top: 443px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+
+.select2{
+  /* Select the mobile combustion sources in the above identified facility that are owned/directly controlled (Note: Please do not include 3rd party managed Logistics) */
+
+position: absolute;
+width: 858px;
+height: 52px;
+left: 201px;
+top: 540px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox13{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 201px;
+top: 612px;
+
+
+}
+.car{
+  /* Car */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 229px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox14{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 364px;
+top: 612px;
+
+
+}
+.motorcycle{
+  /* Motorcycle */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 392px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox15{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 521px;
+top: 612px;
+
+
+}
+.light{
+  /* Light Duty Truck */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 549px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox16{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 759px;
+top: 612px;
+
+
+}
+.heavy{
+  /* Heavy Duty Truck */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 787px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox17{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 972px;
+top: 612px;
+
+
+}
+.passenger{
+  /* Passenger Bus */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1000px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox18{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1171px;
+top: 612px;
+
+
+}
+.van{
+  /* Passenger van */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1199px;
+top: 609px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox19{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 201px;
+top: 671px;
+
+
+}
+.crane{
+  /* Crane */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 229px;
+top: 668px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox20{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 364px;
+top: 671px;
+
+
+}
+.forklift{
+  /* Forklift */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 392px;
+top: 668px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox21{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 521px;
+top: 671px;
+
+
+}
+.construction{
+  /* Construction Vehicle */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 549px;
+top: 668px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox22{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 759px;
+top: 671px;
+
+
+}
+.agriculture{
+  /* Agriculture Vehicle */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 787px;
+top: 668px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox23{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 972px;
+top: 671px;
+
+
+}
+.commercial{
+  /* Commercial Flight */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1000px;
+top: 668px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox24{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 199px;
+top: 730px;
+
+
+}
+.executive{
+  /* Executive Jet */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 227px;
+top: 727px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox25{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 364px;
+top: 730px;
+
+
+}
+.freight{
+/* Freight Train */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 392px;
+top: 727px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox26{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 521px;
+top: 730px;
+
+
+}
+.commuter{
+  /* Commuter Train */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 549px;
+top: 727px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox27{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 759px;
+top: 730px;
+
+
+}
+.ship{
+  /* Ship */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 787px;
+top: 727px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox28{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 972px;
+top: 730px;
+
+
+}
+.boat{
+  /* Boat */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1000px;
+top: 727px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox29{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1171px;
+top: 733px;
+
+
+}
+.otherss{
+  /* Others */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1199px;
+top: 730px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.type2{
+  /* Rectangle 645 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 148px;
+height: 35px;
+left: 201px;
+top: 789px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.next{
+  /* Rectangle 630 */
+
+position: absolute;
+width: 123px;
+height: 41px;
+left: 1175px;
+top: 901px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+border-radius: 30.5px;
+
+}
+.logo{
+  /* White Variation 1 */
+
+position: absolute;
+width: 57px;
+height: 55px;
+left: 15px;
+top: 65px;
+
+/* background: url(../assets/logo.png); */
+
+}
+.settings{
+  /* settings 1 */
+
+position: absolute;
+width: 49px;
+height: 49px;
+left: 21px;
+top: 174px;
+
+background: url(../../assets/settings.png);
+
+}
+.user{
+/* user (5) 1 */
+
+position: absolute;
+width: 44px;
+height: 48px;
+left: 1349px;
+top: 64px;
+
+background: url(../../assets/user.png);
+
+}

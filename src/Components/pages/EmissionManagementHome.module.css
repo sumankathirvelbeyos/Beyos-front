@@ -1,0 +1,113 @@
+.leftArrowInCircularButtonIcon,
+.user51 {
+  width: 44px;
+  position: absolute;
+  margin: 0 !important;
+  object-fit: contain;
+}
+.leftArrowInCircularButtonIcon {
+  height: 43px;
+  top: 65px;
+  left: 148px;
+}
+.user51 {
+  height: 48px;
+  top: 0;
+  right: 47px;
+}
+.emissionManagement {
+  margin: 0;
+  width: 1330px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 107%;
+}
+.userInfo {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 151px 0 0;
+  box-sizing: border-box;
+  position: relative;
+  gap: 95px;
+  max-width: 100%;
+}
+.emissionManagementHome,
+.userBar,
+.userInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.userBar {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-45xl) 0 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 192px);
+  text-align: left;
+  font-size: 40px;
+  color: #014762;
+  font-family: var(--font-poppins);
+}
+.emissionManagementHome {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  gap: 98px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 1025px) {
+  .emissionManagement {
+    font-size: 32px;
+  }
+  .userBar,
+  .userInfo {
+    box-sizing: border-box;
+  }
+  .userInfo {
+    padding-top: 98px;
+  }
+  .userBar {
+    padding-top: var(--padding-23xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .userInfo {
+    gap: 47px;
+  }
+  .userBar {
+    max-width: 100%;
+  }
+  .emissionManagementHome {
+    gap: 49px;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .emissionManagement {
+    font-size: 24px;
+  }
+  .userBar,
+  .userInfo {
+    box-sizing: border-box;
+  }
+  .userInfo {
+    gap: var(--gap-5xl);
+    padding-top: var(--padding-45xl);
+  }
+  .userBar {
+    padding-top: 27px;
+  }
+  .emissionManagementHome {
+    gap: var(--gap-5xl);
+  }
+}

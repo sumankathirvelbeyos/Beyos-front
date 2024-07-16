@@ -1,0 +1,1707 @@
+.beyos{
+  /* BeyOS */
+
+position: absolute;
+width: 133px;
+height: 60px;
+left: 221px;
+top: 100px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+}
+.facility{
+  /* 001 - FACILITY 1 */
+
+position: absolute;
+width: 962px;
+height: 118px;
+left: 199px;
+top: 188px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #014762;
+
+
+}
+.select1{
+  /* Select the Refrigerant gases used in the above identified facility for various Refrigeration and Air-Conditioning equipments */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 282px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.rectangle{
+  /* Rectangle 1 */
+
+position: absolute;
+width: 94px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 95.83%);
+
+}
+.next{
+  /* Rectangle 630 */
+
+position: absolute;
+width: 123px;
+height: 41px;
+left: 1175px;
+top: 901px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+border-radius: 30.5px;
+
+}
+.r401a{
+  /* R401-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox1{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 334px;
+
+
+}
+.r401b{
+  /* R401-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 347px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox2{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 319px;
+top: 334px;
+
+
+}
+.r401c{
+  /* R401-C */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 459px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox3{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 431px;
+top: 334px;
+
+
+}
+.r402a{
+  /* R402-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 576px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox4{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 548px;
+top: 334px;
+
+
+}
+.r402b{
+  /* R402-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 704px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox5{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 676px;
+top: 334px;
+
+
+}
+.r403b{
+  /* R403-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 831px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox6{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 803px;
+top: 334px;
+
+
+}
+.r404a{
+  /* R404-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 959px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox7{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 931px;
+top: 334px;
+
+
+}
+.r406a{
+  /* R406-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1088px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox8{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1060px;
+top: 334px;
+
+
+}
+.r407a{
+  /* R407-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox9{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 383px;
+
+
+}
+.r407b{
+  /* R407-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 347px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox10{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 319px;
+top: 383px;
+
+
+}
+.r407c{
+  /* R407-C */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 459px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox11{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 431px;
+top: 383px;
+
+
+}
+.r407d{
+  /* R407-D */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 576px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox12{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 548px;
+top: 383px;
+
+
+}
+.r407e{
+  /* R407-E */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 704px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox13{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 676px;
+top: 383px;
+
+
+}
+.r408a{
+  /* R408-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 831px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox14{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 803px;
+top: 383px;
+
+
+}
+.r409a{
+  /* R409-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 959px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox15{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 931px;
+top: 383px;
+
+
+}
+.r410a{
+  /* R410-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1088px;
+top: 380px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox16{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1060px;
+top: 383px;
+
+
+}
+.r410b{
+  /* R410-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox17{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 432px;
+
+
+}
+.r411a{
+  /* R411-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 347px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox18{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 319px;
+top: 432px;
+
+
+}
+.r411b{
+  /* R411-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 459px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox19{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 431px;
+top: 432px;
+
+
+}
+.r407dd{
+  /* R407-D */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 576px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox20{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 548px;
+top: 432px;
+
+
+}
+.r413a{
+  /* R413-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 704px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox21{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 676px;
+top: 432px;
+
+
+}
+.r414a{
+  /* R414-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 831px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox22{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 803px;
+top: 432px;
+
+
+}
+.r414b{
+  /* R414-B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 959px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox23{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 931px;
+top: 432px;
+
+
+}
+.r417a{
+  /* R417-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1088px;
+top: 429px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox24{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1060px;
+top: 432px;
+
+
+}
+.r422a{
+  /* R422-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox25{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 481px;
+
+
+}
+.r422d{
+  /* R422-D */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 347px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox26{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 319px;
+top: 481px;
+
+
+}
+.r423a{
+  
+/* R423-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 459px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox27{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 431px;
+top: 481px;
+
+
+}
+.r424a{
+  /* R424-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 576px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox28{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 548px;
+top: 481px;
+
+
+}
+.r426a{
+  /* R426-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 704px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox29{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 676px;
+top: 481px;
+
+
+}
+.r428a{
+  /* R428-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 831px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox30{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 803px;
+top: 481px;
+}
+
+.r434a{
+  /* R434-A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 959px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox31{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 931px;
+top: 481px;
+
+
+}
+.r500{
+  /* R500 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1088px;
+top: 478px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox32{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1060px;
+top: 481px;
+
+
+}
+.r502{
+  /* R502 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox33{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 533px;
+
+
+}
+.r504{
+  /* R504 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 347px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox34{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 319px;
+top: 533px;
+
+
+}
+.r507{
+  /* R507 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 459px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox35{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 431px;
+top: 533px;
+
+
+}
+.r508a{
+  /* R508A */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 576px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox36{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 548px;
+top: 533px;
+
+
+}
+.r508b{
+  /* R508B */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 704px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox37{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 676px;
+top: 533px;
+
+
+}
+.others{
+  /* Others */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 831px;
+top: 530px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox38{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 803px;
+top: 533px;
+
+
+}
+.input1{
+  /* Rectangle 644 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 148px;
+height: 35px;
+left: 202px;
+top: 585px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.select2{
+  /* Select Other possible emissions related to process/operations in the above identified facility */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 693px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.process{
+  /* Process Vent */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 742px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox39{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 745px;
+
+
+}
+.equipmentv{
+  /* Equipment Vent */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 409px;
+top: 742px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox40{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 381px;
+top: 745px;
+
+
+}
+.main{
+  /* Maintenance/Turnaround */
+
+position: absolute;
+width: 227px;
+height: 35px;
+left: 604px;
+top: 742px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox41{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 576px;
+top: 745px;
+
+
+}
+.leaks{
+  /* Leaks */
+
+position: absolute;
+width: 227px;
+height: 35px;
+left: 868px;
+top: 742px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox42{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 840px;
+top: 745px;
+
+
+}
+.loading{
+  /* Loading/unloading activities */
+
+position: absolute;
+width: 257px;
+height: 35px;
+left: 1009px;
+top: 742px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox43{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 981px;
+top: 745px;
+
+
+}
+.select3{
+  /* Select the possible gases that are released due to the selected process/operations related activity */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 807px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.co2{
+  /* CO2 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox44{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 862px;
+
+
+}
+.ch4{
+  /* CH4 */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 312px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox45{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 284px;
+top: 862px;
+
+
+}
+.n20{
+  /* N2O */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 394px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox46{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 366px;
+top: 862px;
+
+
+}
+.cfc{
+  /* CFC */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 480px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox47{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 452px;
+top: 862px;
+
+
+}
+.hfc{
+  /* HFC */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 572px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox48{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 544px;
+top: 862px;
+
+
+}
+.pfc{
+  /* PFC */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 662px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox49{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 634px;
+top: 862px;
+
+
+}
+.pfe{
+  /* HFE */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 753px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox50{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 725px;
+top: 862px;
+
+
+}
+.pfpmie{
+  /* PFPMIE */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 850px;
+top: 859px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox51{
+  /* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 822px;
+top: 862px;
+
+
+}
+.logo{
+  /* White Variation 1 */
+
+position: absolute;
+width: 57px;
+height: 55px;
+left: 15px;
+top: 65px;
+
+background: url(../../assets/logo.png);
+
+}
+.settings{
+  /* settings 1 */
+
+position: absolute;
+width: 49px;
+height: 49px;
+left: 21px;
+top: 174px;
+
+background: url(../../assets/settings.png);
+
+}
+.user{
+  /* user (5) 1 */
+
+position: absolute;
+width: 44px;
+height: 48px;
+left: 1349px;
+top: 64px;
+
+background: url(./../../assets/user.png);
+
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "facilityCode": "05",
+    "facilityName": "PROCESS",
+    "year": "2022-2021",
+    "month": "MAY",
+    "typeOfGasEmitted": "demo",
+    "refrigerantChargedNew": "demo2",
+    "capacityOfEquipmentNew": "demo",
+    "refrigerantChargedExisting": "demo",
+    "capacityOfEquipmentRetiring": "demo",
+    "refrigerantRecoveredRetiring": "demo",
+    "fileUrl": null
+  },
+  {
+    "id": 1,
+    "facilityCode": "05",
+    "facilityName": "DOWNSTREAM",
+    "year": "2021-2020",
+    "month": "JUNE",
+    "typeOfGasEmitted": "demo23",
+    "refrigerantChargedNew": "demo23",
+    "capacityOfEquipmentNew": "demo23",
+    "refrigerantChargedExisting": "demo23",
+    "capacityOfEquipmentRetiring": "demo23",
+    "refrigerantRecoveredRetiring": "demo23",
+    "fileUrl": null
+  },
+  {
+    "id": 3,
+    "year": "2021-2020",
+    "month": "DECEMBER",
+    "facilityCode": "06",
+    "facilityName": "FUGITIVE",
+    "refrigerantChargedNew": "20",
+    "capacityOfEquipmentNew": "20",
+    "refrigerantChargedExisting": "20",
+    "capacityOfEquipmentRetiring": "20",
+    "refrigerantRecoveredRetiring": "20",
+    "emissions": "0.00"
+  }
+]

@@ -1,0 +1,20 @@
+.rectangle-mc-list {
+    width: 10px;
+    height: 9px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.filled-mc-list {
+    background-color: green;
+}
+
+.empty-mc-list {
+    background-color: lightgray;
+}
+
+.progress-bar-mc-list {
+    display: flex;
+    flex-wrap: wrap;
+}

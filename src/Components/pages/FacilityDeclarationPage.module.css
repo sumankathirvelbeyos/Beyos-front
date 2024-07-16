@@ -1,0 +1,731 @@
+.line1{
+    /* Line 46 */
+  
+  position: absolute;
+  width: 1162px;
+  height: 0px;
+  left: 165px;
+  top: 308px;
+  
+  border: 1px solid #448E1F;
+  
+  }
+  .beyoss{
+    /* BeyOS */
+  
+  position: absolute;
+  width: 133px;
+  height: 60px;
+  left: 221px;
+  top: 100px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+  
+  }
+  .rectangle{
+    /* Rectangle 1 */
+  
+  position: absolute;
+  width: 94px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 95.83%);
+  
+  }
+  .facilityname{
+    /* FACILITY NAME */
+  
+  position: absolute;
+  width: 140px;
+  height: 22px;
+  left: 169px;
+  top: 211px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  
+  color: #014762;
+  
+  
+  }
+  .facilityid{
+    /* FACILITY ID */
+  
+  position: absolute;
+  width: 141px;
+  height: 22px;
+  left: 398px;
+  top: 211px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  
+  color: #014762;
+  
+  
+  }
+  .country{
+    /* COUNTRY */
+  
+  position: absolute;
+  width: 140px;
+  height: 22px;
+  left: 578px;
+  top: 211px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  
+  color: #014762;
+  
+  
+  }
+  .latitude{
+    /* LATITUDE */
+  
+  position: absolute;
+  width: 140px;
+  height: 22px;
+  left: 792px;
+  top: 211px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  
+  color: #014762;
+  
+  
+  }
+  .longitude{
+    /* LONGITUDE */
+  
+  position: absolute;
+  width: 140px;
+  height: 22px;
+  left: 977px;
+  top: 211px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  
+  color: #014762;
+  
+  
+  }
+  .facilityname1{
+    /* Rectangle 45 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 204px;
+  height: 47px;
+  left: 169px;
+  top: 241px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .facilityid1{
+    /* Rectangle 46 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 159px;
+  height: 47px;
+  left: 398px;
+  top: 241px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .country1{
+    /* Rectangle 47 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 198px;
+  height: 47px;
+  left: 576px;
+  top: 241px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .latitude1{
+    /* Rectangle 48 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 791px;
+  top: 241px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .longitude1{
+    /* Rectangle 676 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 976px;
+  top: 241px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .button1{
+    /* Rectangle 577 */
+  
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  left: 1167px;
+  top: 244px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .facilityname2{
+    /* Rectangle 49 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 204px;
+  height: 47px;
+  left: 169px;
+  top: 324px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .facilityid2{
+    /* Rectangle 50 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 159px;
+  height: 47px;
+  left: 398px;
+  top: 324px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .country2{
+    /* Rectangle 51 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 198px;
+  height: 47px;
+  left: 576px;
+  top: 324px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .latitude2{
+    /* Rectangle 52 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 791px;
+  top: 324px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .longitude2{
+    /* Rectangle 677 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 976px;
+  top: 324px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .button2{
+    /* Rectangle 578 */
+  
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  left: 1167px;
+  top: 330px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .line2{
+    /* Line 47 */
+  
+  position: absolute;
+  width: 1162px;
+  height: 0px;
+  left: 165px;
+  top: 391px;
+  
+  border: 1px solid #448E1F;
+  
+  }
+  .facilityname3{
+    /* Rectangle 53 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 204px;
+  height: 47px;
+  left: 169px;
+  top: 404px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .facilityid3{
+    /* Rectangle 54 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 159px;
+  height: 47px;
+  left: 398px;
+  top: 404px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .country3{
+    /* Rectangle 55 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 198px;
+  height: 47px;
+  left: 576px;
+  top: 404px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .latitude3{
+    /* Rectangle 56 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 791px;
+  top: 404px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .longitude3{
+    /* Rectangle 678 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 976px;
+  top: 404px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .button3{
+    /* Rectangle 579 */
+  
+  position: absolute;
+  width: 160px;
+  height: 36px;
+  left: 1167px;
+  top: 410px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .line3{
+    /* Line 48 */
+  
+  position: absolute;
+  width: 1162px;
+  height: 0px;
+  left: 169px;
+  top: 472px;
+  
+  border: 1px solid #448E1F;
+  
+  }
+  .facilityname4{
+    /* Rectangle 679 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 204px;
+  height: 47px;
+  left: 173px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .facilityid4{
+    /* Rectangle 680 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 159px;
+  height: 47px;
+  left: 402px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .country4{
+    /* Rectangle 681 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 198px;
+  height: 47px;
+  left: 580px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .latitude4{
+    /* Rectangle 682 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 795px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .longitude4{
+  /* Rectangle 687 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 980px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .button4{
+    /* Rectangle 689 */
+  
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  left: 1171px;
+  top: 499px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .line4{
+    /* Line 49 */
+  
+  position: absolute;
+  width: 1162px;
+  height: 0px;
+  left: 169px;
+  top: 560px;
+  
+  border: 1px solid #448E1F;
+  
+  }
+  .facilityname5{
+    /* Rectangle 683 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 204px;
+  height: 47px;
+  left: 173px;
+  top: 573px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .facilityid5{
+    /* Rectangle 684 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 159px;
+  height: 47px;
+  left: 402px;
+  top: 573px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .country5{
+    /* Rectangle 685 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 198px;
+  height: 47px;
+  left: 580px;
+  top: 573px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .latitude5{
+    /* Rectangle 686 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 795px;
+  top: 573px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .longitude5{
+    /* Rectangle 688 */
+  
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 168px;
+  height: 47px;
+  left: 980px;
+  top: 573px;
+  
+  background: #FFFFFF;
+  border: 1.5px solid #B1B1B1;
+  border-radius: 11px;
+  
+  }
+  .button5{
+    /* Rectangle 690 */
+  
+  position: absolute;
+  width: 160px;
+  height: 36px;
+  left: 1171px;
+  top: 579px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .line5{
+    /* Line 50 */
+  
+  position: absolute;
+  width: 1162px;
+  height: 0px;
+  left: 173px;
+  top: 641px;
+  
+  border: 1px solid #448E1F;
+  
+  }
+  .button6{
+    /* Rectangle 630 */
+  
+  position: absolute;
+  width: 123px;
+  height: 41px;
+  left: 1218px;
+  top: 834px;
+  
+  background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+  border-radius: 30.5px;
+  
+  }
+  .logo{
+    /* White Variation 1 */
+  
+  position: absolute;
+  width: 57px;
+  height: 55px;
+  left: 15px;
+  top: 65px;
+  
+  background: url(../../assets/logo.png);
+  
+  }
+  .settings{
+    /* settings 1 */
+  
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 21px;
+  top: 174px;
+  
+  background: url(../../assets/settings.png);
+  
+  }
+  .user{
+    /* user (5) 1 */
+  
+  position: absolute;
+  width: 44px;
+  height: 48px;
+  left: 1349px;
+  top: 64px;
+  
+  background: url(../../assets/user.png);
+  
+  }
+  .scroll{
+    /* Rectangle 674 */
+  
+  position: absolute;
+  width: 10px;
+  height: 423px;
+  left: 1368px;
+  top: 218px;
+  
+  background: #D9D9D9;
+  border-radius: 26px;
+  
+  }
+  .scroll2{
+    /* Rectangle 675 */
+  
+  position: absolute;
+  width: 10px;
+  height: 355px;
+  left: 1368px;
+  top: 218px;
+  
+  background: #448E1F;
+  border-radius: 26px;
+  
+  }

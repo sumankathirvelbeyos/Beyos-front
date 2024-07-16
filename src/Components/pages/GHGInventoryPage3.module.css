@@ -1,0 +1,808 @@
+.rectangle{
+  /* Rectangle 1 */
+
+position: absolute;
+width: 94px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 95.83%);
+
+}
+.beyos{
+  /* BeyOS */
+
+position: absolute;
+width: 133px;
+height: 60px;
+left: 221px;
+top: 100px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.facility{
+  /* 001 - FACILITY 1 */
+
+position: absolute;
+width: 962px;
+height: 118px;
+left: 199px;
+top: 188px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #014762;
+
+}
+.source{
+  /* Select the source of your purchased electricity in the above identified facility */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 282px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+
+.checkbox1{
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 334px;
+}
+
+.nationalGrid{
+/* National Grid */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.complete{
+  /* Rectangle 630 */
+
+position: absolute;
+width: 123px;
+height: 41px;
+left: 1185px;
+top: 902px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+border-radius: 30.5px;
+
+}
+.checkbox2{
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 389px;
+top: 334px;
+}
+
+.solar{
+/* Solar */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 417px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.checkbox3{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 576px;
+top: 334px;
+}
+
+.wind{
+/* Wind */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 604px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+.checkbox4{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 763px;
+top: 334px;
+}
+
+.hydro{
+/* Hyrdo */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 791px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox5{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 908px;
+top: 334px;
+
+}
+.nuclear{
+/* Nuclear */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 936px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.checkbox6{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1082px;
+top: 334px;
+}
+
+.naturalGas{
+/* Natural gas */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 1110px;
+top: 331px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+.checkbox7{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 202px;
+top: 386px;
+}
+
+.biogas{
+/* Biogas */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 230px;
+top: 383px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox8{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 389px;
+top: 386px;
+
+}
+.coal{
+/* Coal */
+
+position: absolute;
+width: 178px;
+height: 35px;
+left: 417px;
+top: 383px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.serviceProvider{
+  /* Name of the Service Provider */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 460px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.input1{
+/* Rectangle 644 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 377px;
+height: 35px;
+left: 199px;
+top: 498px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.input2{
+/* Rectangle 645 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 377px;
+height: 35px;
+left: 199px;
+top: 545px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.input3{
+/* Rectangle 48 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 76px;
+height: 35px;
+left: 589px;
+top: 545px;
+
+background: #FFFFFF;
+border: 1.5px solid #CFCFCF;
+border-radius: 11px;
+
+}
+.categories{
+  /* Select the Categories of Scope 3 applicable for this facility */
+
+position: absolute;
+width: 1012px;
+height: 52px;
+left: 199px;
+top: 629px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+}
+.checkbox9{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 199px;
+top: 690px;
+
+}
+.purchasedGoods{
+/* Purchased Goods & Services */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 227px;
+top: 687px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox10{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 511px;
+top: 690px;
+}
+
+.capitalGoods{
+/* Capital Goods */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 539px;
+top: 687px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox11{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 728px;
+top: 690px;
+}
+
+.fuelEnergy{
+/* Fuel & Energy related activities */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 756px;
+top: 687px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox13{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 199px;
+top: 737px;
+}
+
+.waste{
+/* Waste from operations */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 227px;
+top: 734px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox14{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 511px;
+top: 737px;
+}
+
+.business{
+/* Business Travel */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 539px;
+top: 734px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox15{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 728px;
+top: 737px;
+}
+
+.employee{
+/* Employee Commute */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 756px;
+top: 734px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox16{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1048px;
+top: 737px;
+}
+
+.downstream{
+/* Downstream Transportation */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 1076px;
+top: 734px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox12{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1048px;
+top: 690px;
+}
+
+.upstream{
+/* Upstream Transportation */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 1076px;
+top: 687px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+.checkbox17{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 199px;
+top: 784px;
+}
+
+.upstreamAssets{
+/* Upstream Leased Assets */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 227px;
+top: 781px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox21{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 199px;
+top: 834px;
+}
+
+.investment{
+/* Investment */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 227px;
+top: 831px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox22{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 511px;
+top: 834px;
+}
+
+.franchise{
+/* Franchise */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 539px;
+top: 831px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox23{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 728px;
+top: 834px;
+}
+
+.downstreamAssets{
+/* Downstream Leased Assets */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 756px;
+top: 831px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox18{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 511px;
+top: 784px;
+}
+
+.use{
+/* Use of sold products */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 539px;
+top: 781px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox19{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 728px;
+top: 784px;
+}
+
+.processing{
+/* Processing of sold products */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 756px;
+top: 781px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.checkbox20{
+/* CheckBox */
+
+position: absolute;
+width: 19px;
+height: 18px;
+left: 1048px;
+top: 784px;
+}
+
+.eol{
+/* EOL of sold products */
+
+position: absolute;
+width: 252px;
+height: 35px;
+left: 1076px;
+top: 781px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}

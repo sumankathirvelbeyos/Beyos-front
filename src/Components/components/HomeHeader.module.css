@@ -1,0 +1,163 @@
+.homeHeaderChild {
+  width: 94px;
+  height: 1024px;
+  position: relative;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  display: none;
+  z-index: 0;
+}
+.homeHeaderItem {
+  width: 0;
+  height: 21.8px;
+  position: absolute;
+  margin: 0 !important;
+  top: 422px;
+  right: 25.5px;
+  object-fit: contain;
+  z-index: 2;
+}
+.dataManagement3Icon,
+.whiteVariation1 {
+  width: 57px;
+  height: 55px;
+  position: relative;
+  object-fit: contain;
+  z-index: 1;
+}
+.dataManagement3Icon {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.dataManagement3Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+}
+.dataManagement2Icon {
+  height: 37px;
+  width: 38px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.firstLevel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.dataManagement1Icon {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 1;
+}
+.thirdLevel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs) var(--padding-base);
+}
+.co2,
+.dataManagement4Icon {
+  position: relative;
+  z-index: 1;
+}
+.co2 {
+  align-self: stretch;
+  height: 67px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.dataManagement4Icon {
+  height: 38px;
+  width: 38px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.fourthLevel,
+.secondLevel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fourthLevel {
+  flex-direction: row;
+  padding: 0 var(--padding-8xs);
+}
+.secondLevel {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-2xl-5);
+}
+.managementHierarchy {
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--padding-12xs) 0 0;
+  gap: var(--gap-26xl);
+}
+.homeOptions,
+.managementHierarchy,
+.managementHierarchyWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.managementHierarchyWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-3xs);
+}
+.homeOptions {
+  width: 95.7px;
+  flex-direction: column;
+  gap: var(--gap-34xl-5);
+}
+.settings1Icon {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  margin: 0 !important;
+  right: 26px;
+  bottom: 334px;
+  object-fit: contain;
+  z-index: 1;
+}
+.homeHeader {
+  height: 1024px;
+  width: 94px;
+  background: linear-gradient(180deg, #014762, #448e1f);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-46xl) 0 var(--padding-46xl) var(--padding-mini);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 750px) {
+  .homeHeader {
+    display: none;
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .co2 {
+    font-size: var(--font-size-3xl);
+  }
+}

@@ -1,0 +1,69 @@
+.user-form-modal-overlay-uc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 100; /* Ensure the overlay is on top */
+  }
+  
+  .user-form-modal-uc {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Max width for the modal */
+  }
+  .cancel-icon-uc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .cancel-icon-uc img {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+  }
+  .cancel-icon-uc img:hover {
+    opacity: 0.7; /* Reduce opacity on hover for visual feedback */
+  }
+  
+  .user-form-modal-uc h2 {
+    text-align: center;
+  }
+  
+  .user-form-modal-uc form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-form-modal-uc label {
+    margin-bottom: 10px;
+  }
+  
+  .user-form-modal-uc input,
+  .user-form-modal-uc select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-form-modal-uc button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-form-modal-uc button:hover {
+    background-color: #0056b3;
+  }
+  

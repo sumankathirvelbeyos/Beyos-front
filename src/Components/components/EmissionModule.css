@@ -1,0 +1,300 @@
+.emission-module {
+    margin: 200px;
+    width:80%;
+    margin-top:200px;
+  }
+  
+  .emission-list {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 200px;
+    margin-top: 210px;
+    margin-left: -80px;
+    width:100%
+  }
+  
+  .next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Rectangle 577 */
+
+position: absolute;
+width: 117px;
+height: 38px;
+left: 968px;
+top: 672px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
+border-radius: 30.5px;
+
+  }
+.emissionmodule{
+    /* EMISSION MODULE */
+
+/* EMISSION MODULE */
+
+position: absolute;
+width: 991px;
+height: 122px;
+left: 189px;
+top: 101px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+
+color: #014762;
+
+/* EMISSION MODULE */
+/* 
+position: absolute;
+width: 991px;
+height: 122px;
+left: 189px;
+top: 151px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+
+color: #014762; */
+
+
+}  
+.rectangle{
+    /* Rectangle 1 */
+
+position: absolute;
+width: 94px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #014762 0%, #448E1F 95.83%);
+
+}
+.logo{
+    /* White Variation 1 */
+
+position: absolute;
+width: 57px;
+height: 55px;
+left: 15px;
+top: 65px;
+
+/* background: url(../assets/logo.png); */
+
+}
+.folder{
+    /* data-management 3 */
+
+position: absolute;
+width: 42px;
+height: 42px;
+left: 27px;
+top: 173px;
+
+/* background: url(data-collection.png); */
+
+}
+.target{
+    /* data-management 2 */
+
+position: absolute;
+width: 38px;
+height: 37px;
+left: 29px;
+top: 269px;
+
+/* background: url(aim.png); */
+
+}
+.leaf{
+/* data-management 1 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 29px;
+top: 351px;
+/* 
+background: url(leaf (1).png); */
+
+}
+.co2{
+    /* Group 1 */
+
+position: absolute;
+width: 85.08px;
+height: 71.53px;
+left: 25.6px;
+top: 422px;
+
+
+}
+.pie{
+    /* data-management 4 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 31px;
+top: 515px;
+/* 
+background: url(pie-chart.png); */
+
+}
+.back{
+    /* left-arrow-in-circular-button-black-symbol 1 */
+
+position: absolute;
+width: 44px;
+height: 43px;
+left: 148px;
+top: 65px;
+
+/* background: url(left-arrow-in-circular-button-black-symbol.png); */
+
+}
+.filter{
+    /* filter 1 */
+
+position: absolute;
+width: 28px;
+height: 29px;
+left: 999px;
+top: 141px;
+/* 
+background: url(filter.png); */
+
+}
+.emissiontype{
+    /* EMISSION TYPE */
+
+position: absolute;
+width: 145px;
+height: 22px;
+left: 293px;
+top: 185px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+
+color: #014762;
+
+
+}
+.facility{
+    /* FACILITY */
+
+position: absolute;
+width: 145px;
+height: 22px;
+left: 516px;
+top: 185px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+
+color: #014762;
+
+
+}
+.responsibility{
+/* RESPONSIBILITY */
+
+position: absolute;
+width: 144px;
+height: 22px;
+left: 643px;
+top: 185px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+
+color: #014762;
+
+
+}
+.reportingyear{
+/* REPORTING YEAR */
+
+position: absolute;
+width: 145px;
+height: 22px;
+left: 770px;
+top: 185px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+
+color: #014762;
+
+
+}
+.status{
+/* STATUS */
+
+position: absolute;
+width: 145px;
+height: 22px;
+left: 968px;
+top: 185px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+
+color: #014762;
+
+
+}
+.container{
+    width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Styles for desktops and larger devices (min-width: 1024px) */
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 970px;
+    }
+  }
+  
+  /* Styles for large desktops (min-width: 1200px) */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1170px;
+    }
+  }

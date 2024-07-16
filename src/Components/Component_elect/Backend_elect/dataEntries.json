@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "reportingYear": "2019-2020",
+    "month": "MAY",
+    "facilityCode": "005",
+    "facilityName": "Facility5",
+    "typeofElectricity": "coal",
+    "quantity": "2345",
+    "units": "kg",
+    "fileUrl": ""
+  },
+  {
+    "id": 2,
+    "reportingYear": "2020-2021",
+    "month": "DECEMBER",
+    "facilityCode": "005",
+    "facilityName": "Facility5",
+    "typeofElectricity": "peat",
+    "quantity": "567",
+    "units": "kg",
+    "fileUrl": ""
+  }
+]

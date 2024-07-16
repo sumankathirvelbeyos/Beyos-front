@@ -1,0 +1,39 @@
+.emission-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .emission-icon {
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  .emission-type {
+    flex: 2;
+  }
+  
+  .emission-facility {
+    flex: 1;
+  }
+  
+  .emission-user-select {
+    flex: 1;
+  }
+  
+  .emission-year {
+    flex: 1;
+  }
+  
+  .emission-status {
+    flex: 1;
+  }
+  
+  .status-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  

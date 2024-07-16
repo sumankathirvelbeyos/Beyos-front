@@ -1,0 +1,20 @@
+.rectangle-fe-list {
+    width: 10px;
+    height: 9px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.filled-fe-list {
+    background-color: green;
+}
+
+.empty-fe-list {
+    background-color: lightgray;
+}
+
+.progress-bar-fe-list {
+    display: flex;
+    flex-wrap: wrap;
+}

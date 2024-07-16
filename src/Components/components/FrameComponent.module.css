@@ -1,0 +1,55 @@
+.checkbox5,
+.checkbox6,
+.checkbox7 {
+  margin: 0;
+  width: 19px;
+  height: 18px;
+  position: relative;
+  z-index: 2;
+}
+.truckBus,
+.truckBusSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.truckBusSelection {
+  gap: var(--gap-22xl);
+}
+.truckBus {
+  padding: var(--padding-10xs) 0 0;
+}
+.commuterTrain,
+.constructionVehicle,
+.lightDutyTruck {
+  align-self: stretch;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.truckBusParent,
+.vehicles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vehicles {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.truckBusParent {
+  position: absolute;
+  top: 0;
+  left: 322px;
+  width: 206px;
+  flex-direction: row;
+  gap: var(--gap-4xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

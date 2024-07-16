@@ -1,0 +1,20 @@
+.rectangle-sc {
+    width: 10px;
+    height: 9px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.filled-sc {
+    background-color: green;
+}
+
+.empty-sc {
+    background-color: lightgray;
+}
+
+.progress-bar-sc {
+    display: flex;
+    flex-wrap: wrap;
+}

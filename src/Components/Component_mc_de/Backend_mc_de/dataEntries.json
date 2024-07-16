@@ -1,0 +1,28 @@
+[
+  {
+    "year": "2019-2020",
+    "month": "APRIL",
+    "facilityCode": "005",
+    "facilityName": "Facility 5",
+    "vehicleType": "CAR",
+    "fuelType": "DIESEL",
+    "quantity": "456",
+    "siUnits": "LITRES",
+    "distance": "4532",
+    "fileUrl": "",
+    "emissions": 1276.8
+  },
+  {
+    "year": "2017-2018",
+    "month": "NOVEMBER",
+    "facilityCode": "001",
+    "facilityName": "Mobile Combustion",
+    "vehicleType": "Bus",
+    "fuelType": "Biodiesel",
+    "quantity": "3000",
+    "siUnits": "liter",
+    "distance": "2000",
+    "fileUrl": "",
+    "emissions": "7470.00"
+  }
+]

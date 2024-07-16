@@ -1,0 +1,163 @@
+.background {
+    width: 94px;
+    height: 1024px;
+    position: relative;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    display: none;
+    z-index: 0;
+  }
+  .white-variation-15 {
+    height: 55px;
+    width: 57px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .white-variation-1-wrapper {
+    width: 57px;
+    height: 86.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-12xl-5);
+    box-sizing: border-box;
+  }
+  .data-management-3-icon4 {
+    height: 42px;
+    width: 42px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .data-management-3-wrapper {
+    width: 43.4px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-11xs-4);
+    box-sizing: border-box;
+  }
+  .data-management-2-icon4 {
+    height: 37px;
+    width: 38px;
+    position: relative;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .data-management-2-wrapper {
+    width: 41.4px;
+    height: 44.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-5xs-5) var(--padding-9xs-4);
+    box-sizing: border-box;
+  }
+  .data-management-1-icon4 {
+    height: 38px;
+    width: 38px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .data-management-1-wrapper {
+    width: 41.4px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-9xs-4);
+    box-sizing: border-box;
+  }
+  .co24 {
+    width: 85.1px;
+    height: 67px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .frame-parent26,
+  .frame-parent27,
+  .frame-wrapper7 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent27 {
+    width: 85.1px;
+    height: 224.5px;
+    flex-direction: column;
+    gap: var(--gap-18xl-5);
+  }
+  .frame-parent26,
+  .frame-wrapper7 {
+    height: 320.5px;
+  }
+  .frame-parent26 {
+    width: 85.1px;
+    flex-direction: column;
+    gap: var(--gap-35xl);
+  }
+  .frame-wrapper7 {
+    width: 57px;
+    flex-direction: row;
+    padding: 0 0 0 var(--padding-2xs-6);
+    box-sizing: border-box;
+  }
+  .frame-child5 {
+    width: 0;
+    height: 21.8px;
+    position: absolute;
+    margin: 0 !important;
+    top: 422px;
+    right: 25.5px;
+    object-fit: contain;
+    z-index: 2;
+  }
+  .data-management-4-icon4 {
+    height: 38px;
+    width: 38px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .background-parent,
+  .data-management-4-wrapper {
+    width: 54px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-base);
+    box-sizing: border-box;
+  }
+  .background-parent {
+    height: 1024px;
+    width: 94px;
+    background: linear-gradient(180deg, #014762, #448e1f);
+    flex-direction: column;
+    padding: var(--padding-46xl) var(--padding-mini) var(--padding-452xl);
+    position: relative;
+    gap: var(--gap-2xl-5);
+    text-align: left;
+    font-size: var(--font-size-9xl);
+    color: var(--white);
+    font-family: var(--drop-menu-menu);
+  }
+  @media screen and (max-width: 450px) {
+    .co24 {
+      font-size: var(--font-size-3xl);
+    }
+  }
+  
