@@ -6,6 +6,7 @@ const GHGInventoryPage = () => {
   // eslint-disable-next-line
   const { auth, logout } = useContext(AuthContext);
   const[formData,setFormData]=useState({
+    email:'aswath@gmail.com',
     checkbox1:false,
     checkbox2:false,
     checkbox3:false,
@@ -44,6 +45,9 @@ const GHGInventoryPage = () => {
   const handleghg2 = () => {
   navigate('/ghg2');
 };
+const handlelogo=()=>{
+  navigate('/landingpage')
+}
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
@@ -104,14 +108,14 @@ const GHGInventoryPage = () => {
 
 
   return(
-    <div>
+    <div >
     {auth.isAuthenticated ? (
     <>
       <h1 className={styles.beyos}>BeyOS</h1>
       <h1 className={styles.facility}>001 - FACILITY 1</h1>
       <div className={styles.rectangle}></div>
       <h4 className={styles.select}>Select the Equipments in the above identified facility that use fuel for combustion activities (Energy & Utility)</h4>
-      <img className={styles.logo} src="./../../assets/logo.png"alt=""/>
+      <img className={styles.logo} onClick={handlelogo} src="./../../assets/logo.png"alt=""/>
       <img className={styles.settings} alt=""/>
       <img className={styles.user} alt=""/>
 

@@ -32,7 +32,8 @@
     border-radius: var(--br-3xs) var(--br-3xs) 0 0;
 
     object-fit: cover;
-
+    background: no-repeat;
+    background-size: contain;
 
   }
 

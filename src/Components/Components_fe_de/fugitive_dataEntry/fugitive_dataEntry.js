@@ -2,6 +2,7 @@
 import React, { useState,useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from "react";
+import axios from "axios";
 import { AuthContext } from '../../contextProvider/AuthContext';
 import {AddDataIcon,CO2Icon,dataManagement1,AttachmentFileIcon,dataManagement2,dataManagement3,PieChartIcon,UserIcon,searchIcon,Vector1,Vector2,Vector3,whiteVariation,Rectangle1,LeftArrow, Line} from "../../../assets_fe_de"
 
@@ -13,12 +14,73 @@ const FugitiveDataEntry= () => {
   const handlePrevOfFEDataEntry = () => {
   navigate('/finalList_fe');
 };
+const [facilityCodes] = useState(['001', '002', '003', '004', '005']);
+    const [facilityNames] = useState(['Mobile Combustion', 'Facility 2', 'Facility 3', 'Facility 4', 'Facility 5']);
 
+    const yearRanges = [
+        '2022-2023',
+        '2021-2022',
+        '2020-2021',
+        '2019-2020',
+        '2018-2019',
+        '2017-2018',
+    ];
+    const handleFacilityCodeChange = (e) => {
+      const code = e.target.value;
+      const index = facilityCodes.indexOf(code);
+      const facilityName = facilityNames[index];
+      setData(prevData => ({
+          ...prevData,
+          facilityCode: code,
+          facilityName: facilityName
+      }));
+  };
+  
+
+    // Other event handler functions...
+    const handleFacilityNameChange = (e) => {
+      const name = e.target.value;
+      const index = facilityNames.indexOf(name);
+      const facilityCode = facilityCodes[index];
+      setData(prevData => ({
+          ...prevData,
+          facilityName: name,
+          facilityCode: facilityCode
+      }));
+  };
+  
+  const MonthValue=['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER']
+      const handleYearChange = (event) => {
+        const yearValue = event.target.value;
+        setData(prevData => ({
+            ...prevData,
+            year: yearValue
+        }));
+    };
+    
+    const handleMonthChange = (event) => {
+      const monthValue = event.target.value;
+      setData(prevData => ({
+          ...prevData,
+          month: monthValue
+      }));
+  };
     const [data, setData] = useState({
         facilityCodes: [],
         facilityNames: [],
         year: [],
         month: [],
+        email:"aswath@gmail.com",
+        "refrigerantChargedNew": "",
+    "capacityOfEquipmentNew": "",
+    "refrigerantChargedExisting": "",
+    "capacityOfEquipmentRetiring": "",
+    "refrigerantRecoveredRetiring": "",
+    "emissions": "",
+    "emissionType": "Company Owned vehicles usage (Mobile combustion)",
+    "responsibility": "HARI",
+    "monthlyStatus": 70
+
       });
       // eslint-disable-next-line
       const [dataEntries, setDataEntries] = useState([]);// eslint-disable-next-line
@@ -33,11 +95,16 @@ const FugitiveDataEntry= () => {
     const [refrigerantChargedExisting, setRefrigerantChargedExisting] = useState('');
     const [capacityOfEquipmentRetiring, setCapacityOfEquipmentRetiring] = useState('');
     const [refrigerantRecoveredRetiring, setRefrigerantRecoveredRetiring] = useState('');
-    const [refrigerantPurchased, setRefrigerantPurchased] =useState('');
+    const [refrigerantPurchased, setRefrigerantPurchased] = useState('');
+    // eslint-disable-next-line
+    const [email, setemail] =useState('');// eslint-disable-next-line
+    const [emissionType,setemissionType ] =useState('');// eslint-disable-next-line
+    const [emissions, setemissions] =useState('');// eslint-disable-next-line
       const fetchData = async () => {
         try {
-          const response = await fetch("http://127.0.0.1:8080/dropdowns"); // Replace with your backend URL
-          const fetchedData = await response.json();
+          const response = await axios.post("https://backend-new-419p.onrender.com/fugitiveemmission",data); // Replace with your backend URL
+          
+          const fetchedData = await response.data;
           setData({
             facilityCodes: fetchedData.facilityCodes || [],
             
@@ -52,9 +119,9 @@ const FugitiveDataEntry= () => {
       };
       const fetchDataEntries = async () => {
         try {
-          const response = await fetch("http://127.0.0.1:8080/fugitiveemissiondataentry");
-          const fetchedEntries = await response.json();
-          setDataEntries(fetchedEntries);
+          const response = await axios.post("https://backend-new-419p.onrender.com/fugitiveemmission",data);
+          
+          setDataEntries(response.data);
         } catch (error) {
           console.error("Error fetching data entries:", error);
         }
@@ -70,26 +137,29 @@ const FugitiveDataEntry= () => {
         setSelectedFile(file);
     
         if (file) {
-          const formData = new FormData();
-          formData.append("file", file.name);
+            const formData = new FormData();
+            formData.append("file", file);
+            
     
-          try {
-            const response = await fetch("http://127.0.0.1:8080/upload", {
-              method: "POST",
-              body: formData,
-            });
+            try {
+                const response = await axios.post("https://backend-new-419p.onrender.com/fugitiveemmission", formData, {
+                    headers: {
+                        "Content-Type": "multipart/form-data"
+                    }
+                });
     
-            if (response.ok) {
-              alert("File uploaded successfully!");
-            } else {
-              alert("File upload failed.");
+                if (response.status === 200) {
+                    alert("File uploaded successfully!");
+                } else {
+                    alert("File upload failed.");
+                }
+            } catch (error) {
+                console.error("Error uploading file:", error);
+                alert("File upload failed.");
             }
-          } catch (error) {
-            console.error("Error uploading file:", error);
-            alert("File upload failed.");
-          }
         }
-      };  
+    };
+    
   const onDataManagement1IconClick = useCallback(() => {
     // Please sync "Plugin / file cover - 17" to the project
   }, []);
@@ -106,6 +176,7 @@ const FugitiveDataEntry= () => {
     // Please sync "Emission Measurement - Home Page" to the project
   }, []);
 
+
   const saveData = async () => {
     const formData = {
         facilityCode: selectedFacilityCode,
@@ -118,11 +189,16 @@ const FugitiveDataEntry= () => {
         refrigerantChargedExisting: refrigerantChargedExisting,
         capacityOfEquipmentRetiring: capacityOfEquipmentRetiring,
         refrigerantRecoveredRetiring: refrigerantRecoveredRetiring,
-        file: selectedFile.name
+        file: selectedFile.name,
+        email:email,
+        emissions: emissions,
+        monthlyStatus: 40,
+        emissionType: emissionType,
+        responsibility: "HARI"
     };
 
     try {
-        const response = await fetch("http://127.0.0.1:8080/fugitiveemissiondataentry", {
+        const response = await axios.post("http://127.0.0.1:8080/fugitiveemmission", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -141,21 +217,7 @@ const FugitiveDataEntry= () => {
     }
 };
 
-  const handleFacilityCodeChange = (e) => {
-    setSelectedFacilityCode(e.target.value);
-
-};
-const handleFacilityNameChange = (e) => {
-    setSelectedFacilityName(e.target.value);
-};
-
-const handleYearChange = (e) => {
-    setSelectedYear(e.target.value);
-};
-
-const handleMonthChange = (e) => {
-    setSelectedMonth(e.target.value);
-};
+  
 
 const handleTypeOfGasEmittedChange = (e) => {
     setTypeOfGasEmitted(e.target.value);
@@ -185,8 +247,7 @@ const handlerefrigerantPurchased = (e) =>{
     setRefrigerantPurchased(e.target.value);
 }
   return (
-    <div>
-    {auth.isAuthenticated ? (
+   
     <div className="mobile-combustion-data-entry-fe-de">
       <div className="mobile-combustion-data-entry-child-fe-de" />
       <img
@@ -220,9 +281,9 @@ const handlerefrigerantPurchased = (e) =>{
       <div className="dropdown-box-fe-de">
         <div className="">
         <div className="menu-label1-fe-de">
-           <select className="header-fe-de" value={selectedYear} onChange={handleYearChange}>
+           <select className="header-fe-de" value={data.selectedYear} onChange={handleYearChange}>
     <option value="">Select Year</option>
-    {data.year.map((yearOption) => ( // Change 'year' to 'yearOption'
+    {yearRanges.map((yearOption) => ( // Change 'year' to 'yearOption'
       <option key={yearOption} value={yearOption}>
         {yearOption}
       </option>
@@ -250,25 +311,27 @@ const handlerefrigerantPurchased = (e) =>{
       <div className="rectangle-div-fe-de" />
       <div className="rectangle-div-fe-de" />
       <div className="">
-      <select className="rectangle-div-fe-de" value={selectedMonth} onChange={handleMonthChange}>
+      <select className="rectangle-div-fe-de" value={data.selectedMonth} onChange={handleMonthChange}>
     <option value="">Select Month</option>
-    {data.month.map((monthOption) => ( // Change 'year' to 'yearOption'
+    {MonthValue.map((monthOption) => ( // Change 'year' to 'yearOption'
       <option key={monthOption} value={monthOption}>
         {monthOption}
       </option>
     ))}
+    
   </select></div>
       <select className="mobile-combustion-data-entry-child2-fe-de" value={data.selectedFacilityCode} onChange={handleFacilityCodeChange}>
         <option value="">Select Facility Code</option>
-        {data.facilityCodes.map((code) => (
+        {facilityCodes.map((code) => (
           <option key={code} value={code}>
             {code}
           </option>
         ))}
+        
       </select>
       <select className="mobile-combustion-data-entry-child3-fe-de" value={selectedFacilityName} onChange={handleFacilityNameChange}>
         <option value="">Select Facility Name</option>
-        {data.facilityNames.map((name) => (
+        {facilityNames.map((name) => (
           <option key={name} value={name}>
             {name}
           </option>
@@ -348,10 +411,7 @@ const handlerefrigerantPurchased = (e) =>{
         <input id="file-upload-fe-de" type="file" accept=".pdf,.doc,.docx" style={{ display: 'none' }}  onChange={handleFileChange} />
         </div>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+
   );
 };
 

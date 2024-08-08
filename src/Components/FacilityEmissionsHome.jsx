@@ -3,6 +3,7 @@ import FrameComponent1 from "./Subcomponents/FrameComponent1";
 import FrameComponent from "./Subcomponents/FrameComponent";
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Components/contextProvider/AuthContext';
+import ProgressBar from "./FacilityHome_SubComponent/ProgressBar";
 import {cart10,cart11,cart12,cart2,left,user,vector11,vector12,vector13} from "../Assets_facility_homepage"
 
 const FacilityEmissionsHome = () => {
@@ -58,6 +59,7 @@ const handlePrev = () => {
 
 
   return (
+    
     <div>
     {auth.isAuthenticated ? (
     <div className="facility-emissions-home">
@@ -133,18 +135,9 @@ const handlePrev = () => {
                           <div className="content1" />
                         </div>
                         <div className="content-group">
-                          <div className="content2" />
-                          <div className="content3" />
-                          <div className="content4" />
-                          <div className="content5" />
-                          <div className="content6" />
-                          <div className="content7" />
-                          <div className="content8" />
-                          <div className="content9" />
-                          <div className="content10" />
-                          <div className="content11" />
-                          <div className="content12" />
-                          <div className="content13" />
+                        <div className="checkbox-row-00" >
+                               <ProgressBar progress={60} />
+                        </div>
                         </div>
                       </div>
                       <div className="frame-parent6">
@@ -160,30 +153,12 @@ const handlePrev = () => {
                         <div className="content-container">
                           <div className="content15" />
                           <div className="content-parent1">
-                            <div className="content16" />
-                            <div className="content17" />
-                            <div className="content18" />
-                            <div className="content19" />
-                            <div className="content20" />
-                            <div className="content21" />
-                            <div className="content22" />
-                            <div className="content23" />
-                            <div className="content24" />
-                            <div className="content25" />
-                            <div className="content26" />
-                            <div className="content27" />
-                            <div className="content28" />
-                            <div className="content29" />
-                            <div className="content30" />
-                            <div className="content31" />
-                            <div className="content32" />
-                            <div className="content33" />
-                            <div className="content34" />
-                            <div className="content35" />
-                            <div className="content36" />
-                            <div className="content37" />
-                            <div className="content38" />
-                            <div className="content39" />
+                          <div className="checkbox-row-01" >
+                               <ProgressBar progress={60} />
+                        </div>
+                        <div className="checkbox-row-02" >
+                               <ProgressBar progress={20} />
+                        </div>
                           </div>
                         </div>
                       </div>
@@ -214,97 +189,35 @@ const handlePrev = () => {
                               <div className="content45" />
                               <div className="content46" />
                               <div className="content-parent4">
-                                <div className="content47" />
-                                <div className="content48" />
-                                <div className="content49" />
-                                <div className="content50" />
-                                <div className="content51" />
-                                <div className="content52" />
-                                <div className="content53" />
-                                <div className="content54" />
-                                <div className="content55" />
-                                <div className="content56" />
-                                <div className="content57" />
-                                <div className="content58" />
-                                <div className="content59" />
-                                <div className="content60" />
-                                <div className="content61" />
-                                <div className="content62" />
-                                <div className="content63" />
-                                <div className="content64" />
-                                <div className="content65" />
-                                <div className="content66" />
-                                <div className="content67" />
-                                <div className="content68" />
-                                <div className="content69" />
-                                <div className="content70" />
-                                <div className="content71" />
-                                <div className="content72" />
-                                <div className="content73" />
-                                <div className="content74" />
-                                <div className="content75" />
-                                <div className="content76" />
-                                <div className="content77" />
-                                <div className="content78" />
-                                <div className="content79" />
-                                <div className="content80" />
-                                <div className="content81" />
-                                <div className="content82" />
+                              <div className="checkbox-row-03" >
+                               <ProgressBar progress={80} />
+                        </div>
+                        <div className="checkbox-row-04" >
+                               <ProgressBar progress={50} />
+                        </div>
+                               
+                        <div className="checkbox-row-05" >
+                               <ProgressBar progress={70} />
+                        </div>
                               </div>
                             </div>
                             <div className="content-parent5">
-                              <div className="content83" />
-                              <div className="content84" />
-                              <div className="content85" />
-                              <div className="content86" />
-                              <div className="content87" />
-                              <div className="content88" />
-                              <div className="content89" />
-                              <div className="content90" />
-                              <div className="content91" />
-                              <div className="content92" />
-                              <div className="content93" />
-                              <div className="content94" />
+                            <div className="checkbox-row-06" >
+                               <ProgressBar progress={60} />
+                        </div>
                             </div>
                             <div className="content-parent6">
-                              <div className="content95" />
-                              <div className="content96" />
-                              <div className="content97" />
-                              <div className="content98" />
-                              <div className="content99" />
-                              <div className="content100" />
-                              <div className="content101" />
-                              <div className="content102" />
-                              <div className="content103" />
-                              <div className="content104" />
-                              <div className="content105" />
-                              <div className="content106" />
+                            <div className="checkbox-row-07" >
+                               <ProgressBar progress={110} />
+                        </div>
                             </div>
                             <div className="content-parent7">
-                              <div className="content107" />
-                              <div className="content108" />
-                              <div className="content109" />
-                              <div className="content110" />
-                              <div className="content111" />
-                              <div className="content112" />
-                              <div className="content113" />
-                              <div className="content114" />
-                              <div className="content115" />
-                              <div className="content116" />
-                              <div className="content117" />
-                              <div className="content118" />
-                              <div className="content119" />
-                              <div className="content120" />
-                              <div className="content121" />
-                              <div className="content122" />
-                              <div className="content123" />
-                              <div className="content124" />
-                              <div className="content125" />
-                              <div className="content126" />
-                              <div className="content127" />
-                              <div className="content128" />
-                              <div className="content129" />
-                              <div className="content130" />
+                            <div className="checkbox-row-08" >
+                               <ProgressBar progress={70} />
+                        </div>
+                        <div className="checkbox-row-09" >
+                               <ProgressBar progress={30} />
+                        </div>
                             </div>
                           </div>
                         </div>
@@ -339,28 +252,39 @@ const handlePrev = () => {
                         <div className="frame-parent12">
                           <div className="frame-parent13">
                             <div className="content-parent9">
-                              <div className="content132" />
-                              <div className="content133" />
-                              <div className="content134" />
-                              <div className="content135" />
-                              <div className="content136" />
-                              <div className="content137" />
-                              <div className="content138" />
-                              <div className="content139" />
-                              <div className="content140" />
-                              <div className="content141" />
+                            <div className="checkbox-row-10" >
+                               <ProgressBar progress={0} />
+                        </div>
+                        <div className="checkbox-row-11" >
+                               <ProgressBar progress={10} />
+                        </div>
+                        <div className="checkbox-row-12" >
+                               <ProgressBar progress={20} />
+                        </div>
+                        <div className="checkbox-row-13" >
+                               <ProgressBar progress={30} />
+                        </div>
+                        <div className="checkbox-row-14" >
+                               <ProgressBar progress={40} />
+                        </div>
+                        <div className="checkbox-row-15" >
+                               <ProgressBar progress={50} />
+                        </div>
+                        <div className="checkbox-row-16" >
+                               <ProgressBar progress={60} />
+                        </div>
+                        <div className="checkbox-row-17" >
+                               <ProgressBar progress={70} />
+                        </div>
+                        <div className="checkbox-row-18" >
+                               <ProgressBar progress={80} />
+                        </div>
+                        <div className="checkbox-row-19" >
+                               <ProgressBar progress={90} />
+                        </div>
                             </div>
                             <div className="content-parent10">
-                              <div className="content142" />
-                              <div className="content143" />
-                              <div className="content144" />
-                              <div className="content145" />
-                              <div className="content146" />
-                              <div className="content147" />
-                              <div className="content148" />
-                              <div className="content149" />
-                              <div className="content150" />
-                              <div className="content151" />
+                              
                             </div>
                             <div className="content-parent11">
                               <div className="content152" />
@@ -373,124 +297,11 @@ const handlePrev = () => {
                               <div className="content159" />
                               <div className="content160" />
                               <div className="frame-parent14">
-                                <div className="content-parent12">
-                                  <div className="content161" />
-                                  <div className="content162" />
-                                  <div className="content163" />
-                                  <div className="content164" />
-                                  <div className="content165" />
-                                  <div className="content166" />
-                                  <div className="content167" />
-                                  <div className="content168" />
-                                  <div className="content169" />
-                                  <div className="content170" />
-                                </div>
-                                <div className="content-parent13">
-                                  <div className="content171" />
-                                  <div className="content172" />
-                                  <div className="content173" />
-                                  <div className="content174" />
-                                  <div className="content175" />
-                                  <div className="content176" />
-                                  <div className="content177" />
-                                  <div className="content178" />
-                                  <div className="content179" />
-                                  <div className="content180" />
-                                </div>
-                                <div className="content-parent14">
-                                  <div className="content181" />
-                                  <div className="content182" />
-                                  <div className="content183" />
-                                  <div className="content184" />
-                                  <div className="content185" />
-                                  <div className="content186" />
-                                  <div className="content187" />
-                                  <div className="content188" />
-                                  <div className="content189" />
-                                  <div className="content190" />
-                                </div>
-                                <div className="content-parent15">
-                                  <div className="content191" />
-                                  <div className="content192" />
-                                  <div className="content193" />
-                                  <div className="content194" />
-                                  <div className="content195" />
-                                  <div className="content196" />
-                                  <div className="content197" />
-                                  <div className="content198" />
-                                  <div className="content199" />
-                                  <div className="content200" />
-                                </div>
-                                <div className="content-parent16">
-                                  <div className="content201" />
-                                  <div className="content202" />
-                                  <div className="content203" />
-                                  <div className="content204" />
-                                  <div className="content205" />
-                                  <div className="content206" />
-                                  <div className="content207" />
-                                  <div className="content208" />
-                                  <div className="content209" />
-                                  <div className="content210" />
-                                </div>
-                                <div className="content-parent17">
-                                  <div className="content211" />
-                                  <div className="content212" />
-                                  <div className="content213" />
-                                  <div className="content214" />
-                                  <div className="content215" />
-                                  <div className="content216" />
-                                  <div className="content217" />
-                                  <div className="content218" />
-                                  <div className="content219" />
-                                  <div className="content220" />
-                                </div>
-                                <div className="content-parent18">
-                                  <div className="content221" />
-                                  <div className="content222" />
-                                  <div className="content223" />
-                                  <div className="content224" />
-                                  <div className="content225" />
-                                  <div className="content226" />
-                                  <div className="content227" />
-                                  <div className="content228" />
-                                  <div className="content229" />
-                                  <div className="content230" />
-                                </div>
-                                <div className="content-parent19">
-                                  <div className="content231" />
-                                  <div className="content232" />
-                                  <div className="content233" />
-                                  <div className="content234" />
-                                  <div className="content235" />
-                                  <div className="content236" />
-                                  <div className="content237" />
-                                  <div className="content238" />
-                                  <div className="content239" />
-                                  <div className="content240" />
-                                </div>
-                                <div className="content-parent20">
-                                  <div className="content241" />
-                                  <div className="content242" />
-                                  <div className="content243" />
-                                  <div className="content244" />
-                                  <div className="content245" />
-                                  <div className="content246" />
-                                  <div className="content247" />
-                                  <div className="content248" />
-                                  <div className="content249" />
-                                  <div className="content250" />
-                                  <div className="content251" />
-                                  <div className="content252" />
-                                  <div className="content253" />
-                                  <div className="content254" />
-                                  <div className="content255" />
-                                  <div className="content256" />
-                                  <div className="content257" />
-                                  <div className="content258" />
-                                  <div className="content259" />
-                                  <div className="content260" />
-                                </div>
+                               
+                               
+                                
+                                
+                               
                               </div>
                             </div>
                           </div>

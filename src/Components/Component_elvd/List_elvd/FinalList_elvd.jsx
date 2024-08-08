@@ -1,5 +1,6 @@
 import React, { useState, useEffect,useContext } from 'react';
 import { AuthContext } from '../../contextProvider/AuthContext';
+import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 
 import {CartSvg,CircleSvg,WhitecartSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "./../../../assets_elvd/index";
@@ -20,6 +21,7 @@ const FinalListelvd= () => {
      const [filteredData, setFilteredData] = useState([]);
      const [editingItem, setEditingItem] = useState(null);
      const [formData, setFormData] = useState({
+       email:'',
        reportingYear: '',
        month: '',
        facilityCode: '',
@@ -35,13 +37,11 @@ const FinalListelvd= () => {
     // Fetch data from the backend API
     const fetchData = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8080/purchasedelectricityDataentry');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
-            setDataArray(data);
-            setFilteredData(data); // Initially, display all data
+            const response = await axios.post('https://backend-new-419p.onrender.com/getpurchasedelectricity',{email:"alex@example.com"});
+            console.log(response,"response from electricityyyyyyyyyyyyyyyyy")
+            const data = await response.data;
+            setDataArray(response.data);
+            setFilteredData(response.data); // Initially, display all data
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -96,8 +96,8 @@ const FinalListelvd= () => {
     const handleFormSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch('http://127.0.0.1:8080/purchasedelectricityDataentry', {
-          method: 'PUT',
+        const response = await axios.post('https://backend-new-419p.onrender.com/getpurchasedelectricity', {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -105,11 +105,11 @@ const FinalListelvd= () => {
         });
         if (!response.ok) {
           throw new Error('Failed to update');
-        }
+        }// eslint-disable-next-line
         const updatedItem = await response.json();
         
         // Update filteredData with the updated item
-        setFilteredData(filteredData.map(item => (item.reportingYear === updatedItem.reportingYear && item.month === updatedItem.month && item.facilityCode === updatedItem.facilityCode) ? updatedItem : item));
+        // setFilteredData(filteredData.map(item => (item.reportingYear === updatedItem.reportingYear && item.month === updatedItem.month && item.facilityCode === updatedItem.facilityCode) ? updatedItem : item));
   
         // Clear form data after successful update
         setFormData({
@@ -134,8 +134,7 @@ const FinalListelvd= () => {
 
     
   return (
-    <div>
-    {auth.isAuthenticated ? (
+   
     <div className="mobile-combustion-list-elvd">
       <div className="rectangle-parent-elvd">
         <div className="frame-child-elvd" />
@@ -275,7 +274,7 @@ const FinalListelvd= () => {
                 
                   <div className={`rectangle-group-container-elvd ${hasMoreUsers ? 'scrollable-elvd' : ''}`}>
                   <div>
-                  {filteredData.map((item) => (
+                  {dataArray.map((item) => (
                   <div key={item.id} className="rectangle-group-elvd">
                     <div className="rectangle-div-elvd" />
                     <div className="frame-wrapper2-elvd">
@@ -321,6 +320,7 @@ const FinalListelvd= () => {
                         <div className="frame-child3-elvd" >{item.units}</div>
                       </div>
                     </div>
+
                     <div className='emission-container-elvd'>
                        <div className='emission-quantity-elvd'>{item.emissions}</div>
                        
@@ -411,10 +411,7 @@ const FinalListelvd= () => {
         )}
       </main>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+  
   );
 };
 

@@ -19,6 +19,12 @@ const [formData, setFormData] = useState({
   month: '',
   facilityCode: '',
   facilityName: '',
+  email:"suman@gmail.com",
+  "emissions": 19229,
+    "status": 50,
+    "emissionType": "PURCHASED ELECTRICITY",
+    "responsibility": "Hari"
+
 });
 
 const [rows, setRows] = useState([
@@ -108,7 +114,7 @@ const [rows, setRows] = useState([
               formData.append('fileName', rowData.file.name);
   
               // Upload file and get the fileUrl
-              const response = await axios.post('http://127.0.0.1:8080/upload', formData);
+              const response = await axios.post('https://backend-new-419p.onrender.com/purchasedelectricity', data);
               if (response.status === 200) {
                   const { fileUrl } = response.data;
                   data.fileUrl = fileUrl;
@@ -119,12 +125,12 @@ const [rows, setRows] = useState([
                   setRows(updatedRows);
   
                   // Submit data entry with fileUrl
-                  await axios.post('http://127.0.0.1:8080/purchasedelectricityDataentry', data);
+                  await axios.post('https://backend-new-419p.onrender.com/purchasedelectricity', data);
                   console.log('Data entry submitted successfully for row', index);
               }
           } else {
               // Submit data entry without fileUrl
-              await axios.post('http://127.0.0.1:8080/purchasedelectricityDataentry', data);
+              await axios.post('https://backend-new-419p.onrender.com/purchasedelectricity', data);
               console.log('Data entry submitted successfully for row', index);
           }
       } catch (error) {
@@ -161,8 +167,7 @@ const [rows, setRows] = useState([
   
 
     return (
-      <div>
-    {auth.isAuthenticated ? (
+      
         <div className="mobile-combustion-data-entry">
             {/* Form content
             <buton className="mobile-combustion-data-entry-child12" onClick={addRow}>
@@ -315,10 +320,7 @@ const [rows, setRows] = useState([
       </buton>
     </form>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+ 
     );
 };
 

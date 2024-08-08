@@ -12,6 +12,11 @@ const DataEntryMC = () => {
         month: '',
         facilityCode: '',
         facilityName: '',
+        email:'aks@gmail.com',
+        "emissions": 1276.80,
+        "monthlyStatus": 40,
+        "emissionType": "Company Owned vehicles usage (Mobile combustion)",
+        "responsibility": "HARI"
     });
     const navigate = useNavigate();
     const handleViewDataMC = () => {
@@ -112,11 +117,12 @@ const DataEntryMC = () => {
           // Upload file if selected
           if (rowData.file) {
               const formData = new FormData();
+              console.log(formData,);
               formData.append('file', rowData.file);
               formData.append('fileName', rowData.file.name);
-  
+              
               // Upload file and get the fileUrl
-              const response = await axios.post('http://127.0.0.1:8080/upload', formData);
+              const response = await axios.post('https://backend-new-419p.onrender.com/mobilecombustion', data);
               if (response.status === 200) {
                   const { fileUrl } = response.data;
                   data.fileUrl = fileUrl;
@@ -127,12 +133,12 @@ const DataEntryMC = () => {
                   setRows(updatedRows);
   
                   // Submit data entry with fileUrl
-                  await axios.post('http://127.0.0.1:8080/mobilecombustiondataentry', data);
+                  await axios.post('https://backend-new-419p.onrender.com/mobilecombustion', data);
                   console.log('Data entry submitted successfully for row', index);
               }
           } else {
               // Submit data entry without fileUrl
-              await axios.post('http://127.0.0.1:8080/mobilecombustiondataentry', data);
+              await axios.post('https://backend-new-419p.onrender.com/mobilecombustion', data);
               console.log('Data entry submitted successfully for row', index);
           }
       } catch (error) {
@@ -141,9 +147,9 @@ const DataEntryMC = () => {
   };
   
 
-
       const renderDynamicRows = () => {
         return rows.map((rowData, index) => (
+          
             <div className='row-bar-mc-de' key={index}>
                 <div className="data-row-mc-de">
                     <input type="text" placeholder="Type of Vehicle" className="mobile-combustion-data-entry-child1-vehicle-mc-de" value={rowData.vehicleType} onChange={(e) => handleInputChange(index, 'vehicleType', e.target.value)} />
@@ -323,10 +329,11 @@ const DataEntryMC = () => {
       </buton>
     </form>
     </div>
-      ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+  ) : (
+            <p>You are not logged in.</p>
+          )}
+        </div>
+      
     );
 };
 

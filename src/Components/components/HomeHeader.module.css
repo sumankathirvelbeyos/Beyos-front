@@ -23,6 +23,7 @@
   position: relative;
   object-fit: contain;
   z-index: 1;
+  margin-bottom:22px;
 }
 .dataManagement3Icon {
   height: 42px;
@@ -44,6 +45,8 @@
   object-fit: cover;
   cursor: pointer;
   z-index: 1;
+  margin-bottom: 22px;
+  margin-left:-4px;
 }
 .firstLevel {
   display: flex;
@@ -59,6 +62,8 @@
   object-fit: contain;
   cursor: pointer;
   z-index: 1;
+  margin-left: -4px;
+  margin-top: 6px;
 }
 .thirdLevel {
   display: flex;
@@ -77,6 +82,8 @@
   height: 67px;
   display: inline-block;
   flex-shrink: 0;
+  margin-left: -4px;
+  margin-top: -8px;
 }
 .dataManagement4Icon {
   height: 38px;
@@ -128,9 +135,10 @@
   position: absolute;
   margin: 0 !important;
   right: 26px;
-  bottom: 334px;
+   bottom:450px;
   object-fit: contain;
   z-index: 1;
+ 
 }
 .homeHeader {
   height: 1024px;

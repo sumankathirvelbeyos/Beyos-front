@@ -6,6 +6,7 @@ const GHGInventoryPage2 = () => {
   // eslint-disable-next-line
   const { auth, logout } = useContext(AuthContext);
   const [formData, setFormData] = useState({
+    email:'aswath@gmail.com',
     checkbox1:false,
     checkbox2:false,
     checkbox3:false,
@@ -65,6 +66,9 @@ const GHGInventoryPage2 = () => {
   const handleghg3 = () => {
   navigate('/ghg3');
 };
+const handlelogo=()=>{
+  navigate('/landingpage')
+}
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
@@ -542,7 +546,7 @@ const GHGInventoryPage2 = () => {
       onChange={handleCheckboxChange}
     />
    <img
-    className={styles.logo} alt=""
+    className={styles.logo} alt="" onClick={handlelogo}
    />
    <img
     className={styles.settings} alt=""

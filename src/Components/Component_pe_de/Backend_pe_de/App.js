@@ -145,6 +145,7 @@ const readDataEntries = () => {
   return JSON.parse(data);
 };
 
+
 // Function to write data entries to the file
 const writeDataEntries = (entries) => {
   fs.writeFileSync(DATA_FILE, JSON.stringify(entries, null, 2), 'utf8');
@@ -161,7 +162,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // POST endpoint for data entry
-app.post('/processemission/dataentry', (req, res) => {
+app.post('/processemission', (req, res) => {
   const { year, month, facilityCode, facilityName, GasType, Source, quantity, siUnits, fileUrl } = req.body;
   
   const emissions = calculateEmissions(GasType, quantity);
@@ -191,7 +192,7 @@ app.post('/processemission/dataentry', (req, res) => {
 });
 
 // Unified GET endpoint to fetch all data entries
-app.get('/processemission/dataentry', (req, res) => {
+app.get('/processemission', (req, res) => {
   const dataEntries = readDataEntries();
 
   // Process entries to include emissions and monthly status
@@ -214,7 +215,7 @@ app.get('/processemission/dataentry', (req, res) => {
 });
 
 // PUT endpoint for updating data entry
-app.put('/processemission/dataentry', (req, res) => {
+app.put('/processemission', (req, res) => {
   const { id, year, month, facilityCode, facilityName, GasType, Source, quantity, siUnits } = req.body;
 
   const dataEntries = readDataEntries();
@@ -246,4 +247,4 @@ app.listen(PORT, () => {
 });
 
 console.log("Endpoints:");
-console.log(`- Data Entry: http://127.0.0.1:8080/processemission/dataentry`);
+console.log(`- Data Entry: http://127.0.0.1:8080/processemission`);

@@ -132,7 +132,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // POST endpoint for data entry
-app.post('/mobilecombustiondataentry', (req, res) => {
+app.post('/mobilecombustion', (req, res) => {
   const {
     year, month, facilityCode, facilityName,
     vehicleType, fuelType, quantity, siUnits, distance, fileUrl
@@ -171,7 +171,7 @@ app.post('/mobilecombustiondataentry', (req, res) => {
 });
 
 // GET endpoint to retrieve all data entries
-app.get('/mobilecombustiondataentry', (req, res) => {
+app.get('/mobilecombustion', (req, res) => {
   const dataEntries = readDataEntries();
 
   const dataWithStatuses = dataEntries.map((entry) => {

@@ -142,6 +142,37 @@
   position: relative;
   background-color: var(--color-forestgreen-100);
 }
+
+.checkbox-row-20{
+  margin-top: -4px;
+}
+.checkbox-row-21{
+  margin-top: -4px;
+}
+.checkbox-row-22{
+  margin-top: -4px;
+}
+.checkbox-row-23{
+  margin-top: -4px;
+}
+.checkbox-row-24{
+  margin-top: -4px;
+}
+.checkbox-row-25{
+  margin-top: -4px;
+}
+.checkbox-row-26{
+  margin-top: -4px;
+}
+.checkbox-row-27{
+  margin-top: -4px;
+}
+.checkbox-row-28{
+  margin-top: -4px;
+}
+.checkbox-row-29{
+  margin-top: -4px;
+}
 .content270 {
   height: 10px;
 }
@@ -224,7 +255,7 @@
 .content290,
 .content291 {
   height: 1px;
-  width: 270px;
+  width: 282px;
   position: absolute;
   margin: 0 !important;
   top: 13px;
@@ -253,7 +284,7 @@
 .content296,
 .content297 {
   height: 1px;
-  width: 270px;
+  width: 282px;
   position: absolute;
   margin: 0 !important;
   left: -131px;
@@ -685,11 +716,13 @@
 }
 .frame-parent28,
 .frame-parent29 {
+  
   width: 166px;
   gap: var(--gap-11xs);
 }
 .frame-parent28 {
-  width: 269px;
+  
+  width: 273px;
   height: 194.5px;
   gap: var(--gap-24xl);
   text-align: left;

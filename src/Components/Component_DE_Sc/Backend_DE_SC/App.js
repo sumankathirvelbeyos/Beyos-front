@@ -93,7 +93,7 @@ const emissionFactors = {
      "Oxygen steel furnace gas":1284.92,
      "Natural gas":2692.8,
      "Municipal wastes":917,
-     "Industrial wastes":NA,
+     "Industrial wastes":"NA",
      "Wood":1747.2,
      "Wood waste":1747.2,
      "Waste oils":2946.66,
@@ -158,7 +158,7 @@ const emissionFactors = {
      "Oxygen steel furnace gas":0.0007,
      "Natural gas":0.004,
      "Municipal wastes":0.04,
-     "Industrial wastes":NA,
+     "Industrial wastes":"NA",
      "Wood":0.062,
      "Wood waste":0.062,
      "Waste oils":0.160,
@@ -222,7 +222,7 @@ const emissionFactors = {
      "Oxygen steel furnace gas":0.035,
      "Natural gas":0.24,
      "Municipal wastes":3,
-     "Industrial wastes":NA,
+     "Industrial wastes":"NA",
      "Wood":4.68,
      "Wood waste":4.68,
      "Waste oils":12.06,
@@ -295,7 +295,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // POST endpoint for data entry
-app.post('/stationarycombustiondataentry', (req, res) => {
+app.post('/stationarycombustion', (req, res) => {
   const { year, month, facilityCode, facilityName, EmissionSource, fuelType, quantity, siUnits, fileUrl, responsibility } = req.body;
 
   const totalEmission = calculateTotalEmission(EmissionSource, quantity);
@@ -324,7 +324,7 @@ app.post('/stationarycombustiondataentry', (req, res) => {
 });
 
 // GET endpoint to fetch all data entries
-app.get('/stationarycombustiondataentry', (req, res) => {
+app.get('/stationarycombustion', (req, res) => {
   const dataEntries = readDataEntries();
 
   const allEntries = dataEntries.map((entry, index) => ({
@@ -347,7 +347,7 @@ app.get('/stationarycombustiondataentry', (req, res) => {
 });
 
 // PUT endpoint to update data entry
-app.put('/stationarycombustiondataentry/:id', (req, res) => {
+app.put('/stationarycombustion/:id', (req, res) => {
   const { id } = req.params;
   const { year, month, facilityCode, facilityName, EmissionSource, fuelType, quantity, siUnits, responsibility } = req.body;
 

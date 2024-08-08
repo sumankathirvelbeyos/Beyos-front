@@ -1,6 +1,7 @@
 import React, { useState, useEffect ,useContext} from 'react';
 import { AuthContext } from '../../contextProvider/AuthContext';
 import { useNavigate } from 'react-router-dom'; 
+import axios from 'axios';
 import ProgressBarPEList from "./Sub_Component_PE_list/ProgressBarPEList"
 import { AddIcon,CartSvg,CircleSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_pe_list";
 const FinalListPE= () => {
@@ -9,7 +10,7 @@ const FinalListPE= () => {
   const { auth, logout } = useContext(AuthContext);
   const navigate = useNavigate();
     const handlePrevOfPEList = () => {
-    navigate('/facility-emission-homepage');
+    navigate('/facility-emission-homepage');   
 };
 const handleMCDataentry = () => {
   navigate('/data-entry_pe');
@@ -20,10 +21,9 @@ const handleMCDataentry = () => {
      useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch('http://127.0.0.1:8080/processemission/dataentry');
-              const jsonData = await response.json();
-              setDataArray(jsonData);
-              setFilteredData(jsonData); // Initially set filtered data to all data
+              const response = await axios.post('https://backend-new-419p.onrender.com/getprocessemission',{email:"aswath@gmail.com"});
+              setDataArray(response.data);
+              setFilteredData(response.data); // Initially set filtered data to all data
           } catch (error) {
               console.error('Error fetching data:', error);
           }
@@ -225,6 +225,7 @@ const handleMCDataentry = () => {
                     <div className="frame-wrapper3-pe-list">
                       <div className="rectangle-container-pe-list">
                         <div className="frame-child1-pe-list" >
+
 
                             <ProgressBarPEList progress={item.status} />
                         </div>

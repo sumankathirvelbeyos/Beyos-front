@@ -20,7 +20,7 @@ const handleMCDataentry = () => {
      useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://127.0.0.1:8080/mobilecombustiondataentry');
+          const response = await axios.post('https://backend-new-419p.onrender.com/getmobilecombustion',{email:"aswath@gmail.com"});
           setDataArray(response.data); // Update state with response data directly
           setFilteredData(response.data); // Initially set filtered data to all data
         } catch (error) {
@@ -62,6 +62,7 @@ const handleMCDataentry = () => {
   return (
     <div>
     {auth.isAuthenticated ? (
+    
     <div className="mobile-combustion-list-mc-list">
       <div className="rectangle-parent-mc-list">
         <div className="frame-child-mc-list" />
@@ -271,9 +272,9 @@ const handleMCDataentry = () => {
       </main>
     </div>
   ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+            <p>You are not logged in.</p>
+          )}
+        </div>
   );
 };
 

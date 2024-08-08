@@ -1,6 +1,7 @@
 import React, { useState, useEffect,useContext } from 'react';
 import ProgressBar from './Sub_Component_elist/ProgressBar_elist';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import { AuthContext } from '../../contextProvider/AuthContext';
 import { AddIcon,CartSvg,CircleSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "./../../../assets_elist/index";
 const FinalListelist= () => {
@@ -20,10 +21,14 @@ const handlePreviousOfList = () => {
      useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch('http://127.0.0.1:8080/purchasedelectricityDataentry');
-              const jsonData = await response.json();
-              setDataArray(jsonData);
-              setFilteredData(jsonData); // Initially set filtered data to all data
+              const response = await axios.post('https://backend-new-419p.onrender.com/getpurchasedelectricity',{
+                email:"alex@example.com"
+            });
+              console.log(response,"responsessssssssssssssssssss")
+              // eslint-disable-next-line
+              const jsonData = await response.data;
+              setDataArray(response.data);
+              setFilteredData(response.data); // Initially set filtered data to all data
           } catch (error) {
               console.error('Error fetching data:', error);
           }
@@ -61,8 +66,7 @@ const handlePreviousOfList = () => {
     };
 
   return (
-    <div>
-    {auth.isAuthenticated ? (
+    
     <div className="mobile-combustion-list-elist">
       <div className="rectangle-parent-elist">
         <div className="frame-child-elist" />
@@ -229,6 +233,7 @@ const handlePreviousOfList = () => {
 
                             <ProgressBar progress={item.status} />
                         </div>
+
                        
                       </div>
                     </div>
@@ -264,10 +269,7 @@ const handlePreviousOfList = () => {
         </section>
       </main>
     </div>
-      ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+    
   );
 };
 

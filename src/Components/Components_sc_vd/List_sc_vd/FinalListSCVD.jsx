@@ -1,6 +1,7 @@
 import React, { useState, useEffect ,useContext} from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import { AuthContext } from '../../contextProvider/AuthContext';
+import axios from 'axios';
 import {CartSvg,CircleSvg,WhitecartSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_sc_vd";
 const FinalListSCVD= () => {
   
@@ -17,13 +18,18 @@ navigate('/data-entry_sc');
      const [filteredData, setFilteredData] = useState([]);
      const [editingItem, setEditingItem] = useState(null);
      const [formData, setFormData] = useState({
-       reportingYear: '',
+       year: '',
+       email:'',
        month: '',
        facilityCode: '',
        facilityName: '',
        typeofElectricity: '',
        quantity: '',
-       units: '',
+       siUnits: '',
+       emissions:0,
+       emissionSource:'',
+       emissionType:''
+
      });
 
 
@@ -31,13 +37,11 @@ navigate('/data-entry_sc');
     // Fetch data from the backend API
     const fetchData = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8080/stationarycombustiondataentry');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
-            setDataArray(data);
-            setFilteredData(data); // Initially, display all data
+            const response = await axios.post('https://backend-new-419p.onrender.com/getstationarycombustion',{email:"suman@gmail.com"});
+            console.log(response,"datasssssssssssssssssssssssss")
+            const data = response.data;
+            setDataArray(response.data);
+            setFilteredData(response.data); // Initially, display all data
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -73,13 +77,13 @@ navigate('/data-entry_sc');
       const item = filteredData.find((item) => item.id === id);
       setEditingItem(item.id);
       setFormData({
-        reportingYear: item.reportingYear,
+        year: item.reportingYear,
         month: item.month,
         facilityCode: item.facilityCode,
         facilityName: item.facility,
-        fuel: item.fuelType,
+        fuelType: item.fuelType,
         quantity: item.quantity,
-        units: item.siUnits,
+        siUnits: item.siUnits,
       });
     };
     const handleFormChange = (e) => {
@@ -92,8 +96,8 @@ navigate('/data-entry_sc');
     const handleFormSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch('http://127.0.0.1:8080/stationarycombustiondataentry', {
-          method: 'PUT',
+        const response = await axios.post('https://backend-new-419p.onrender.com/getstationarycombustion', {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -102,10 +106,11 @@ navigate('/data-entry_sc');
         if (!response.ok) {
           throw new Error('Failed to update');
         }
+        // eslint-disable-next-line
         const updatedItem = await response.json();
         
         // Update filteredData with the updated item
-        setFilteredData(filteredData.map(item => (item.reportingYear === updatedItem.reportingYear && item.month === updatedItem.month && item.facilityCode === updatedItem.facilityCode) ? updatedItem : item));
+        // setFilteredData(filteredData.map(item => (item.reportingYear === updatedItem.reportingYear && item.month === updatedItem.month && item.facilityCode === updatedItem.facilityCode) ? updatedItem : item));
   
         // Clear form data after successful update
         setFormData({
@@ -116,6 +121,8 @@ navigate('/data-entry_sc');
           fuelType: '',
           quantity: '',
           siUnits: '',
+          emissions:0,
+          emissionType:''
         });
       } catch (error) {
         console.error('Error updating item:', error);
@@ -132,6 +139,7 @@ navigate('/data-entry_sc');
   return (
     <div>
     {auth.isAuthenticated ? (
+    
     <div className="mobile-combustion-list-sc-vd">
       <div className="rectangle-parent-sc-vd">
         <div className="frame-child-sc-vd" />
@@ -270,7 +278,7 @@ navigate('/data-entry_sc');
                 <b className="typeofvehicle-sc-vd">SOURCE</b>
                   <div className={`rectangle-group-container-sc-vd ${hasMoreUsers ? 'scrollable-sc-vd' : ''}`}>
                   <div>
-                  {filteredData.map((item) => (
+                  {dataArray.map((item) => (
                   <div key={item.id} className="rectangle-group-sc-vd">
                     <div className="rectangle-div-sc-vd" />
                     <div className="frame-wrapper2-sc-vd">
@@ -295,10 +303,10 @@ navigate('/data-entry_sc');
                       </div>
                     </div>
                     <div className="facility-1-wrapper-sc-vd">
-                      <div className="facility-1-sc-vd">{item.facility}</div>
+                      <div className="facility-1-sc-vd">{item.facilityName}</div>
                     </div>
                     <div className="manoj-wrapper-sc-vd">
-                      <div className="manoj-sc-vd">{item.reportingYear}</div>
+                      <div className="manoj-sc-vd">{item.year}</div>
                     </div>
                     <div className="wrapper-sc-vd">
                       <div className="div-sc-vd">{item.month}</div>
@@ -308,17 +316,17 @@ navigate('/data-entry_sc');
                       <div className="rectangle-container-sc-vd">
                         <div className="frame-child1-sc-vd" >
 
-                            {item.fuel}
+                            {item.fuelType}
                             
                         </div>
                        <div className="frame-child2-sc-vd" > {item.quantity}
                             </div>
-                        <div className="frame-child3-sc-vd" >{item.units}</div>
+                        <div className="frame-child3-sc-vd" >{item.siUnits}</div>
                       </div>
                     </div>
                     <div className='emission-container-sc-vd'>
-                       <div className='emission-quantity-sc-vd'>{item.emission}</div>
-                       <div className="vehicle-sc-vd">{item.EmissionSource}</div>
+                       <div className='emission-quantity-sc-vd'>{item.emissions}</div>
+                       <div className="vehicle-sc-vd">{item.emissionSource}</div>
                        <div className="edit-container-sc-vd" onClick={() => handleEdit(item.id)}>
  
                            <a href="#Edit" className="edit-link-sc-vd">Edit</a>
@@ -406,10 +414,10 @@ navigate('/data-entry_sc');
         )}
       </main>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+          ) : (
+            <p>You are not logged in.</p>
+          )}
+        </div>
   );
 };
 

@@ -39,7 +39,7 @@ const handlepreviouspagedataEntryOffset = () => {
     ];
 
     useEffect(() => {
-      fetch('http://localhost:5000/api/reducedEmissions')
+      fetch('http://localhost:8080/api/reducedEmissions')
           .then(response => response.json())
           .then(data => {
               setRows(data);
@@ -247,11 +247,13 @@ const handlepreviouspagedataEntryOffset = () => {
                     </button>
     </form>
     </div>
-      ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
-    );
+  ) : (
+            <p>You are not logged in.</p>
+          )}
+        </div>
+        
+    
+      );
 };
 
 export default DataEntryRE;

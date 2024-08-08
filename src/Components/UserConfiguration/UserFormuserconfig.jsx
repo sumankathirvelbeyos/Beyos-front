@@ -1,5 +1,6 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useContext } from 'react';
 import axios from "axios";
+import { AuthContext } from '../contextProvider/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import UserDetailsDisplay from './SubComponent_userconfig/UserDetailsDisplay_userconfig';
 import ToggleMenu from './SubComponent_userconfig/ToggleMenu_userconfig';
@@ -7,11 +8,15 @@ import SettingOption from './SubComponent_userconfig/SettingOption_userconfig';
 import { UserIconSvg, whitevariationSvg, SearchIconSvg,SettingsIconSvg,binSvg, addUserIconSvg, NextIconSvg, GreenBulletSvg, RedBulletSvg } from '../../assets_userconfig';
 
 const UserFormuserconfig = () => {
-
+    // eslint-disable-next-line
+    const { auth, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleBoundaryPage = () => {
     navigate('/boundary');
 };
+const handlelogo=()=>{
+  navigate('/landingpage')
+}
   const [users, setUsers] = useState([{
     userImage:`https://via.placeholder.com/80x80?text=${'HP'}`,
     name: 'Hari',
@@ -40,21 +45,23 @@ useEffect(() => {
 
 const fetchUsers = async () => {
   try {
-    const response = await axios.get('http://127.0.0.1:8080/userconfig');
+    const response = await axios.post('https://backend-new-419p.onrender.com/getuserconfig',{email:"aswath1@gmail.com"});
     setUsers(response.data);
   } catch (error) {
     console.error('Error fetching users:', error);
   }
 };
 const handleUserSubmit = async (formData) => {
+  console.log("backend responesessssssss")
   try {
-    const firstChar = formData.name.charAt(0).toUpperCase();
-    const imageSrc = `${firstChar}`;
-    formData.userImage = imageSrc;
+    
+    
+    console.log(formData,"formadaatttssssssssss")
 
-    const response = await axios.post('http://127.0.0.1:8080/userconfig', formData);
+    const response = await axios.post('https://backend-new-419p.onrender.com/userconfig', formData);
+    console.log(response,"from backendsssssssss")
 
-    if (response.status === 201) {
+    if (response.status === 200) {
       setUsers(prevUsers => [...prevUsers, response.data]);
       setShowForm(false);
     } else {
@@ -136,6 +143,9 @@ const handleUserSubmit = async (formData) => {
   const hasMoreUsers = users.length > 3; // Check if there are more users beyond the visible ones
   
   return (
+    <div>
+    {auth.isAuthenticated ? (
+
     <div className="user-configuration-1st-time-us-uc">
     
       <div className="user-configuration-1st-time-us-child-uc" />
@@ -143,6 +153,7 @@ const handleUserSubmit = async (formData) => {
         className="white-variation-11-uc"
         alt=""
         src={whitevariationSvg}
+        onClick={handlelogo}
       />
       <img className="user-5-11-uc" alt="" src={UserIconSvg} />
       <b className="beyos1-uc">BeyOS</b>
@@ -278,6 +289,10 @@ const handleUserSubmit = async (formData) => {
       
       {showForm && <UserDetailsDisplay onSubmit={handleUserSubmit} onCancel={handleCancel} />}
     </div>
+    ) : (
+      <p>You are not logged in.</p>
+    )}
+  </div>
   );
 };
 

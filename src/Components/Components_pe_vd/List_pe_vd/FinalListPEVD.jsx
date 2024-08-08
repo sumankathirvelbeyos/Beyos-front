@@ -1,5 +1,6 @@
 import React, { useState, useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 import { AuthContext } from '../../contextProvider/AuthContext';
 import {CartSvg,CircleSvg,WhitecartSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_pe_vd";
 const FinalListPEVD= () => {
@@ -15,6 +16,7 @@ const FinalListPEVD= () => {
      const [filteredData, setFilteredData] = useState([]);
      const [editingItem, setEditingItem] = useState(null);
      const [formData, setFormData] = useState({
+      email:'',
        id: '',
        reportingYear: '',
        month: '',
@@ -31,11 +33,9 @@ const FinalListPEVD= () => {
     // Fetch data from the backend API
     const fetchData = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:8080/processemission/dataentry');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
+            const response = await axios.post('https://backend-new-419p.onrender.com/getprocessemission',{email:"aswath@gmail.com"});
+            console.log(response,"view data responsesssssssssssss")
+            const data = await response.data;
             setDataArray(data);
             setFilteredData(data); // Initially, display all data
         } catch (error) {
@@ -97,8 +97,8 @@ const FinalListPEVD= () => {
       e.preventDefault();
   
       try {
-        const response = await fetch('http://127.0.0.1:8080/processemission/dataentry', {
-          method: 'PUT',
+        const response = await axios.post('https://backend-new-419p.onrender.com/getprocessemission', {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -281,7 +281,7 @@ const FinalListPEVD= () => {
                 
                   <div className={`rectangle-group-container-pe-vd ${hasMoreUsers ? 'scrollable-pe-vd' : ''}`}>
                   <div>
-                  {filteredData.map((item) => (
+                  {dataArray.map((item) => (
                   <div key={item.id} className="rectangle-group-pe-vd">
                     <div className="rectangle-div-pe-vd" />
                     <div className="frame-wrapper2-pe-vd">
@@ -427,9 +427,9 @@ const FinalListPEVD= () => {
       </main>
     </div>
   ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+      <p>You are not logged in.</p>
+    )}
+  </div>
   );
 };
 

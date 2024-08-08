@@ -168,7 +168,101 @@ const PopUpTarget = ({ className = "" ,onClose}) => {
       <img className="close-icon-targetpage" alt="Close" src={CloseIcon} onClick={onClose} />
     </div>
     ) : (
-      <p>You are not logged in.</p>
+      <div className={`set-target-popup-targetpage ${className}`}>
+      <div className="set-target-popup-child-targetpage" />
+      <img
+        className="firefly-generate-an-image-of-s-targetpage"
+        alt=""
+        src={Image}
+      />
+       <b className="targets_popUp-targetpage">TARGETS</b>
+
+
+      <div className="select-target-type-targetpage">Select Target Type</div>
+
+      <div className="select-base-year-targetpage">Select Base Year</div>
+      <div className="select-target-year-targetpage">Select Target Year</div>
+      <div className="reduction-from-base-targetpage">% Reduction from base year</div>
+      <div className="scope-1-emissions-targetpage">Scope 1 Emissions (MTCO2e)</div>
+      <div className="set-target-popup-item-targetpage" />
+      <div className="mtco2e-targetpage">MTCO2e</div>
+      
+      <div className="scope-2-emissions-targetpage">Scope 2 Emissions (MTCO2e)</div>
+
+      <div className="set-target-popup-child1-targetpage" onClick={handleSubmitAndClose}/>
+      <b className="set-target-1-targetpage" onClick={handleSubmitAndClose}>SET TARGET</b>
+      <img className="add-4-icon_-targetpage" alt="" src={AddIcon}/>
+      
+      <div className=""> 
+      <input className="set-target-popup-item-targetpage" placeholder="MTCO2e" type="text"value={scope1Emissions} 
+  onChange={(e) => setScope1Emissions(e.target.value)}/>
+      </div>
+
+       <div className="">
+       <input className="rectangle-div-mtco2e-targetpage" placeholder="MTCO2e" type="text" value={scope2Emissions} 
+  onChange={(e) => setScope2Emissions(e.target.value)}/>
+   </div>
+   
+   <div className="" >
+   <input className="set-target-popup-inner-targetpage" placeholder="Enter reduction %" type="text" value={reductionPercentage} 
+  onChange={(e) => setReductionPercentage(e.target.value)}/>
+
+   </div>
+      
+
+     
+      <div className="dropdown-box0-targetpage">
+        <div className="">
+          
+          <div className="menu-label-targetpage">
+          <select id="targetYear" className="header0-targetpage" value={selectedTargetYear} onChange={(e) => setSelectedTargetYear(e.target.value)}>
+          <option value="">Select Target Year</option>
+          {targetYears.map((year, index) => (
+            <option key={index} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+            
+          
+          </div>
+          
+        </div>
+        
+      </div>
+
+      
+      <div className="dropdown-box1-targetpage">
+        <div className="">
+          
+          <div className="menu-label-targetpage">
+          <select id="baseYear" className="header0-targetpage" value={selectedBaseYear} onChange={(e) => setSelectedBaseYear(e.target.value)}>
+          <option value="">Select Base Year</option>
+          {baseYears.map((year, index) => (
+            <option key={index} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+          </div> 
+        </div>   
+      </div>
+      <div className="dropdown-box2-targetpage">
+        <div className="">
+        <select id="targetType" className="header0-targetpage" value={selectedTargetType} onChange={(e) => setSelectedTargetType(e.target.value)}>
+          <option value="">Select Target Type</option>
+          {targetTypes.map((type, index) => (
+            <option key={index} value={type}>
+              {type}
+            </option>
+          ))}
+        </select>
+        </div>
+
+      </div>
+     
+      <img className="close-icon-targetpage" alt="Close" src={CloseIcon} onClick={onClose} />
+    </div>
     )}
   </div>
   );

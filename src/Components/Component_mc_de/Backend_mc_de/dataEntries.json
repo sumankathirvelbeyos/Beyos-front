@@ -24,5 +24,18 @@
     "distance": "2000",
     "fileUrl": "",
     "emissions": "7470.00"
+  },
+  {
+    "year": "2021-2022",
+    "month": "FEBRUARY",
+    "facilityCode": "002",
+    "facilityName": "Facility 2",
+    "vehicleType": "Bus",
+    "fuelType": "JetFuel",
+    "quantity": "234",
+    "siUnits": "litres",
+    "distance": "2345",
+    "fileUrl": "",
+    "emissions": "0.00"
   }
 ]

@@ -219,9 +219,9 @@ const monthlyStatusValues = {
 };
 
 // POST endpoint for file upload
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/uploads', upload.single('file'), (req, res) => {
   if (req.file) {
-    const fileUrl = `http://127.0.0.1:8080/uploads/${req.file.filename}`;
+    const fileUrl = `https://backend-new-419p.onrender.com/fugitiveemmission_${req.file.filename}`;
     res.status(200).send({ fileUrl });
   } else {
     res.status(400).send('No file uploaded');
@@ -229,7 +229,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // POST endpoint for data entry
-app.post('/fugitiveemissiondataentry', (req, res) => {
+app.post('/fugitiveemmission', (req, res) => {
   const {
     year, month, facilityCode, facilityName,
     refrigerant, refrigerantChargedNew, capacityOfEquipmentNew, refrigerantChargedExisting, capacityOfEquipmentRetiring, refrigerantRecoveredRetiring, fileUrl
@@ -264,7 +264,7 @@ app.post('/fugitiveemissiondataentry', (req, res) => {
 });
 
 // GET endpoint to retrieve all data entries
-app.get('/fugitiveemissiondataentry', (req, res) => {
+app.get('/fugitiveemmission', (req, res) => {
   const dataEntries = readDataEntries();
 
   // Format data with facility code, name, month, year, and monthly status
@@ -280,7 +280,7 @@ app.get('/fugitiveemissiondataentry', (req, res) => {
 });
 
 // GET endpoint to retrieve dropdown data
-app.get('/dropdowns', (req, res) => {
+app.get('/fugitiveemmission', (req, res) => {
   res.status(200).json({
     facilityCodes,
     facilityNames,

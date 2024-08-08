@@ -24,7 +24,7 @@ app.post('/offset', (req, res) => {
 });
 
 // Clear all emissions data (for debugging or resetting data)
-app.delete('/api/offset', (req, res) => {
+app.delete('/offset', (req, res) => {
     emissionsData = [];
     res.json({ message: "All data cleared" });
 });

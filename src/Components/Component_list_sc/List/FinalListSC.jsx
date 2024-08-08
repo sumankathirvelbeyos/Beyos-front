@@ -1,6 +1,7 @@
 import React, { useState, useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProgressBar from './Sub_Component/ProgressBar';
+import axios from "axios";
 import { AuthContext } from '../../contextProvider/AuthContext';
 import { AddIcon,CartSvg,CircleSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_list_sc";
 const FinalListSC= () => {
@@ -20,10 +21,11 @@ const handlePrevScList = () => {
      useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch('http://127.0.0.1:8080/stationarycombustiondataentry');
-              const jsonData = await response.json();
-              setDataArray(jsonData);
-              setFilteredData(jsonData); // Initially set filtered data to all data
+              const response = await axios.post('https://backend-new-419p.onrender.com/getstationarycombustion',{email:"suman@gmail.com"});
+              const jsonData = response.data;
+              console.log(jsonData,"jsonnnnnnnnnnnnnmn")
+              setDataArray(response.data);
+              setFilteredData(response.data); // Initially set filtered data to all data
           } catch (error) {
               console.error('Error fetching data:', error);
           }
@@ -63,6 +65,7 @@ const handlePrevScList = () => {
   return (
     <div>
     {auth.isAuthenticated ? (
+    
     <div className="mobile-combustion-list-sc">
       <div className="rectangle-parent-sc">
         <div className="frame-child-sc" />
@@ -193,8 +196,11 @@ const handlePrevScList = () => {
                   <b className="emission-type-sc">EMISSION TYPE</b>
                   <div className={`rectangle-group-container-sc ${hasMoreUsers ? 'scrollable-sc' : ''}`}>
                   <div>
-                   {filteredData.map((item) => (
+                   {dataArray.map((item) => ( 
+                    
+                    
                   <div key={item.id} className="rectangle-group-sc">
+                   
                     <div className="rectangle-div-sc" />
                     <div className="frame-wrapper2-sc">
                       <div className="frame-parent5-sc">
@@ -215,13 +221,13 @@ const handlePrevScList = () => {
                       </div>
                     </div>
                     <div className="facility-1-wrapper-sc">
-                      <div className="facility-1-sc">{item.facility}</div>
+                      <div className="facility-1-sc">{item.facilityName}</div>
                     </div>
                     <div className="manoj-wrapper-sc">
                       <div className="manoj-sc">{item.responsibility}</div>
                     </div>
                     <div className="wrapper-sc">
-                      <div className="div-sc ">{item.reportingYear}</div>
+                      <div className="div-sc ">{item.year}</div>
                     </div>
                     <div className="frame-wrapper3-sc">
                       <div className="rectangle-container-sc">
@@ -231,9 +237,10 @@ const handlePrevScList = () => {
                         </div>
                        
                       </div>
+
                     </div>
                      <button className="frame-button-sc" onClick={handleDataEntrydata}>
-                                                        {item.button.text}
+                     {item.button?.text || ''}
                                                         <div className="frame-child13-sc" />
                                                         <div className="add-1-wrapper-sc">
                                                             <img className="add-1-icon-sc" alt="" src={AddIcon} />
@@ -264,10 +271,10 @@ const handlePrevScList = () => {
         </section>
       </main>
     </div>
-      ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+) : (
+  <p>You are not logged in.</p>
+)}
+</div>
   );
 };
 

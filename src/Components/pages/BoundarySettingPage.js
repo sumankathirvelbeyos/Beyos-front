@@ -25,6 +25,9 @@ const BoundarySettingPage = ({ className = "" }) => {
   const handleFacilityPage = () => {
   navigate('/facility');
 };
+const handlelogo=()=>{
+  navigate('/landingpage')
+}
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
@@ -73,6 +76,7 @@ const handleSubmit = async (e) => {
           loading="lazy"
           alt=""
           src="/white-variation-1@2x.png"
+          onClick={handlelogo}
         />
         <div className={styles.settings1Wrapper}>
           <img

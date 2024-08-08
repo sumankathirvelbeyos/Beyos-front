@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-
+import { AuthContext } from '../../contextProvider/AuthContext';
+import axios from "axios";
 import {CartSvg,CircleSvg,WhitecartSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_mc_vd";
 const FinalListMCVD= () => {
-  
-  
+  // eslint-disable-next-line
+  const { auth, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const handlePrevofMCVD = () => {
   navigate('/data-entry_mc');
@@ -41,19 +42,23 @@ const FinalListMCVD= () => {
   useEffect(() => {
     // Fetch data from the backend API
     const fetchData = async () => {
-        try {
-            const response = await fetch('http://127.0.0.1:8080/mobilecombustiondataentry');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
-            setDataArray(data);
-            setFilteredData(data); // Initially, display all data
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    };
+      try {
 
+          const response = await axios.post('https://backend-new-419p.onrender.com/getmobilecombustion',{email:"aswath@gmail.com"});
+          
+          
+          const data = response.data;
+          console.log(data,"datasssssssssssssssss")
+          setDataArray(data);
+
+
+          setFilteredData(data);
+      } catch (error) {
+          console.error('Error fetching data:', error);
+          // Optionally, set an error state to display a message to the user
+      }
+  };
+  
     fetchData();
 }, []);
 
@@ -94,6 +99,7 @@ const FinalListMCVD= () => {
         siUnits: item.units,
       });
     };
+    
   
     const handleFormChange = (e) => {
       setFormData({
@@ -105,8 +111,8 @@ const FinalListMCVD= () => {
     const handleFormSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch('http://127.0.0.1:8080/mobilecombustiondataentry', {
-          method: 'PUT',
+        const response = await fetch('https://backend-new-419p.onrender.com/getmobilecombustion', {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -115,11 +121,12 @@ const FinalListMCVD= () => {
         if (!response.ok) {
           throw new Error('Failed to update');
         }
+        // eslint-disable-next-line
         const updatedItem = await response.json();
         
         // Update filteredData with the updated item
-        setFilteredData(filteredData.map(item => (item.id === updatedItem.id) ? updatedItem : item));
-        setDataArray(dataArray.map(item => (item.id === updatedItem.id) ? updatedItem : item));
+        // setFilteredData(filteredData.map(item => (item.id === updatedItem.id) ? updatedItem : item));
+        // setDataArray(dataArray.map(item => (item.id === updatedItem.id) ? updatedItem : item));
   
         // Clear form data after successful update
         setFormData({
@@ -145,6 +152,9 @@ const FinalListMCVD= () => {
 
     
   return (
+    <div>
+    {auth.isAuthenticated ? (
+    
     <div className="mobile-combustion-list-mc-vd">
       <div className="rectangle-parent-mc-vd">
         <div className="frame-child-mc-vd" />
@@ -284,7 +294,7 @@ const FinalListMCVD= () => {
                 <b className="typeofvehicle-mc-vd">TYPE OF VEHICLE</b>
                   <div className={`rectangle-group-container-mc-vd ${hasMoreUsers ? 'scrollable-mc-vd' : ''}`}>
                   <div>
-                  {filteredData.map((item) => (
+                  {dataArray.map((item) => (
                   <div key={item.id} className="rectangle-group-mc-vd">
                     <div className="rectangle-div-mc-vd" />
                     <div className="frame-wrapper2-mc-vd">
@@ -427,6 +437,10 @@ const FinalListMCVD= () => {
         )}
       </main>
     </div>
+  ) : (
+            <p>You are not logged in.</p>
+          )}
+        </div>
   );
 };
 

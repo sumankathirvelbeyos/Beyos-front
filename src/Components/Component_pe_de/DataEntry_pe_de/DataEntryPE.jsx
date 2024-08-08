@@ -8,11 +8,24 @@ const DataEntryPE = () => {
   // eslint-disable-next-line
   const { auth, logout } = useContext(AuthContext);
     const [formData, setFormData] = useState({
+
         year: '',
         month: '',
         facilityCode: '',
         facilityName: '',
-    });
+        email:'aswath@gmail.com',
+        "emission": 85.146,
+    "status": 40,
+    "emissionType": "Industrial Process Emissions",
+    "responsibility": "JYOTHSNA",
+    "button": {
+      "text": "",
+      "action": "action1"
+    },
+    "id": 2
+  }
+
+    );
     const navigate = useNavigate();
     const handlePrevOfPEDataEntry = () => {
     navigate('/finalList_pe');
@@ -114,8 +127,11 @@ const handleViewDataPE = () => {
               formData.append('file', rowData.file);
               formData.append('fileName', rowData.file.name);
   
+
               // Upload file and get the fileUrl
-              const response = await axios.post('http://127.0.0.1:8080/upload', formData);
+              const response = await axios.post('https://backend-new-419p.onrender.com/processemission', data);
+              console.log(response,"responses of peocess emisssssssssssssssssssssssssion")
+              
               if (response.status === 200) {
                   const { fileUrl } = response.data;
                   data.fileUrl = fileUrl;
@@ -126,12 +142,12 @@ const handleViewDataPE = () => {
                   setRows(updatedRows);
   
                   // Submit data entry with fileUrl
-                  await axios.post('http://127.0.0.1:8080/processemission/dataentry', data);
+                  await axios.post('https://backend-new-419p.onrender.com/processemission', data);
                   console.log('Data entry submitted successfully for row', index);
               }
           } else {
               // Submit data entry without fileUrl
-              await axios.post('http://127.0.0.1:8080/processemission/dataentry', data);
+              await axios.post('https://backend-new-419p.onrender.com/processemission', data);
               console.log('Data entry submitted successfully for row', index);
           }
       } catch (error) {
@@ -256,6 +272,7 @@ const handleViewDataPE = () => {
                          </option>
                         ))}
                         </select></div>
+
       <div className="type-of-vehicle2-pe-de">Type of Gas</div>
       
       {/* <input className="mobile-combustion-data-entry-child8" type="text" placeholder="    Facility Code"/>
@@ -323,10 +340,10 @@ const handleViewDataPE = () => {
       </buton>
     </form>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+ ) : (
+  <p>You are not logged in.</p>
+)}
+</div>
     );
 };
 

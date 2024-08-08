@@ -1,5 +1,6 @@
 import React, { useState, useEffect,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 import { AuthContext } from '../../contextProvider/AuthContext';
 import ProgressBarFE from "./Sub_ComponentFE/ProgressBarFE";
 import { AddIcon,CartSvg,CircleSvg,FilterSvg,Co2,FolderSvg,GreenSvg,LeftArrow,PiechartSvg,UserSvg,WhitevariationSvg } from "../../../assets_FE_list";
@@ -11,6 +12,7 @@ const FinalListFE= () => {
   navigate('/facility-emission-homepage');
 };
 
+
 const handleDataEntryFE = () => {
   navigate('/data-entry_fe');
 };
@@ -21,13 +23,11 @@ const handleDataEntryFE = () => {
      useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch('http://127.0.0.1:8080/fugitiveemissiondataentry');
-          if (!response.ok) {
-            throw new Error('Failed to fetch data');
-          }
-          const jsonData = await response.json();
-          setDataArray(jsonData);
-          setFilteredData(jsonData|| []); // Ensure it's set to an array
+          const response = await axios.post('https://backend-new-419p.onrender.com/getfugitiveemmission',{email:"aswath@gmail.com"});
+         // eslint-disable-next-line
+          const jsonData = await response.data;
+          setDataArray(response.data);
+          setFilteredData(response.data|| []); // Ensure it's set to an array
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -64,8 +64,7 @@ const handleDataEntryFE = () => {
         }
       };
   return (
-    <div>
-    {auth.isAuthenticated ? (
+
     <div className="mobile-combustion-list-fe-list">
       <div className="rectangle-parent-fe-list">
         <div className="frame-child-fe-list" />
@@ -267,10 +266,7 @@ const handleDataEntryFE = () => {
         </section>
       </main>
     </div>
-  ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+ 
   );
 };
 

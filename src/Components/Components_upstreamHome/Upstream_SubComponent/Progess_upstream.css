@@ -1,0 +1,21 @@
+.rectangle-up-hm {
+    width: 11px;
+    height: 11px;
+    margin: 2px;
+    display: inline-block;
+    
+}
+
+.filled-up-hm {
+    background-color:#448e1f;
+}
+
+.empty-up-hm {
+    background-color:#dcf1d1;
+}
+
+.progress-bar-up-hm {
+    display: flex;
+    flex-wrap: wrap;
+    width:180px;
+}

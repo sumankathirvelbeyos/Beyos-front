@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect ,useContext} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -15,6 +16,9 @@ const CompanyInfo = () => {
   const handleNextPage = () => {
     navigate('/user_form');
 };
+const handlelogo=()=>{
+  navigate('/landingpage')
+}
 
   // const [organizationName, setOrganizationName] = useState('');
   const [userImage, setUserImage] = useState(null);
@@ -22,6 +26,8 @@ const CompanyInfo = () => {
   const [display, setDisplay] = useState(false);
 
     const [companyInfo, setCompanyInfo] = useState({
+
+        email: "aswath@gmail.com",
         organizationName: '',
         description: '',
         address: '',
@@ -29,7 +35,7 @@ const CompanyInfo = () => {
         currency: '',
         natureOfBusiness: '',
         website: '',
-        numberOfEmployees: ''
+        numberOfEmployees: 0
     });
 
     const handleEditIconClick = () => {
@@ -90,41 +96,42 @@ const CompanyInfo = () => {
         }
     };
 
+    // useEffect(() => {
+    //   fetchInitialValues();
+    // }, []);
     
-
-    useEffect(() => {
-        fetchInitialValues();
-    }, []);
-
-    const fetchInitialValues = async () => {
-        try {
-            const response = await axios.get('http://127.0.0.1:8080/profiledetails');
-            const initialCompanyInfo = response.data;
-            setCompanyInfo(initialCompanyInfo);
-        } catch (error) {
-            console.error('Error fetching initial values:', error);
-        }
-    };
-
+    // const fetchInitialValues = async () => {
+    //   try {
+    //     console.log('Fetching initial values');
+    //     const response = await axios.get('http://127.0.0.1:8080/profiledetails');
+    //     console.log('Received response:', response.data);
+    //     const initialCompanyInfo = response.data;
+    //     setCompanyInfo(initialCompanyInfo);
+    //   } catch (error) {
+    //     console.error('Error fetching initial values:', error);
+    //   }
+    // };
+  
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setCompanyInfo(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
+      const { name, value } = e.target;
+      setCompanyInfo(prevState => ({
+        ...prevState,
+        [name]: value
+      }));
     };
-
+  
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await axios.post('http://localhost:5000/api/companyInfo', companyInfo);
-            // Optionally, you can add a success message or redirection here
-            console.log('Company information saved successfully');
-        } catch (error) {
-            console.error('Error saving company information:', error);
-        }
+      console.log("entered handleSubmit");
+      // e.preventDefault();
+      try {
+        console.log(companyInfo)
+        let res=await axios.post('https://backend-new-419p.onrender.com/profiledetails', companyInfo);  // Corrected the endpoint
+        console.log(res,"backend responsesssssssssssss");
+      } catch (error) {
+        console.error('Error saving company information:', error);
+      }
     };
-
+  
     return (
       <div>
     {auth.isAuthenticated ? (
@@ -134,6 +141,7 @@ const CompanyInfo = () => {
           className="white-variation-1-ci"
           alt=""
           src={whiteVariationSvg}
+          onClick={handlelogo}
         />
         <img
           className="user-5-1-ci"
@@ -250,7 +258,7 @@ const CompanyInfo = () => {
 <div>
     <input
         className="company-information-page-child1-ci"
-        type="text"
+        type="number"
         placeholder="Enter no.of employees"
         name="numberOfEmployees"
         value={companyInfo.numberOfEmployees}

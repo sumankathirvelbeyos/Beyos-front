@@ -1,3 +1,4 @@
+
 .line1{
     /* Line 46 */
   
@@ -225,15 +226,17 @@
     /* Rectangle 577 */
   
   position: absolute;
-  width: 160px;
+  width: 180px;
   height: 35px;
   left: 1167px;
   top: 244px;
-  
+  font-family:var(--font-poppins) ;
+  font-size: bold;
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
-  
+  color:#FFFFFF;
   }
+
   .facilityname2{
     /* Rectangle 49 */
   
@@ -318,14 +321,15 @@
     /* Rectangle 578 */
   
   position: absolute;
-  width: 160px;
+  width: 180px;
   height: 35px;
   left: 1167px;
   top: 330px;
-  
+  font-family:var(--font-poppins) ;
+  font-size: bold;
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
-  
+  color:#FFFFFF;
   }
   .line2{
     /* Line 47 */
@@ -423,14 +427,15 @@
     /* Rectangle 579 */
   
   position: absolute;
-  width: 160px;
+  width: 180px;
   height: 36px;
   left: 1167px;
   top: 410px;
-  
+  font-family:var(--font-poppins) ;
+  font-size: bold;
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
-  
+  color:#FFFFFF;
   }
   .line3{
     /* Line 48 */
@@ -528,13 +533,15 @@
     /* Rectangle 689 */
   
   position: absolute;
-  width: 160px;
+  width: 180px;
   height: 35px;
   left: 1171px;
   top: 499px;
-  
+  font-family:var(--font-poppins) ;
+  font-size: bold;
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
+  color:#FFFFFF;
   
   }
   .line4{
@@ -549,8 +556,8 @@
   border: 1px solid #448E1F;
   
   }
-  .facilityname5{
-    /* Rectangle 683 */
+  /* .facilityname5{
+   
   
   box-sizing: border-box;
   
@@ -564,9 +571,9 @@
   border: 1.5px solid #B1B1B1;
   border-radius: 11px;
   
-  }
-  .facilityid5{
-    /* Rectangle 684 */
+  } */
+  /* .facilityid5{
+    
   
   box-sizing: border-box;
   
@@ -580,10 +587,9 @@
   border: 1.5px solid #B1B1B1;
   border-radius: 11px;
   
-  }
-  .country5{
-    /* Rectangle 685 */
-  
+  } */
+  /* .country5{
+    
   box-sizing: border-box;
   
   position: absolute;
@@ -596,10 +602,9 @@
   border: 1.5px solid #B1B1B1;
   border-radius: 11px;
   
-  }
-  .latitude5{
-    /* Rectangle 686 */
-  
+  } */
+  /* .latitude5{
+    
   box-sizing: border-box;
   
   position: absolute;
@@ -612,9 +617,9 @@
   border: 1.5px solid #B1B1B1;
   border-radius: 11px;
   
-  }
-  .longitude5{
-    /* Rectangle 688 */
+  } */
+  /* .longitude5{
+   
   
   box-sizing: border-box;
   
@@ -628,10 +633,9 @@
   border: 1.5px solid #B1B1B1;
   border-radius: 11px;
   
-  }
-  .button5{
-    /* Rectangle 690 */
-  
+  } */
+  /* .button5{
+   
   position: absolute;
   width: 160px;
   height: 36px;
@@ -641,9 +645,9 @@
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
   
-  }
-  .line5{
-    /* Line 50 */
+  } */
+  /* .line5{
+    
   
   position: absolute;
   width: 1162px;
@@ -653,16 +657,16 @@
   
   border: 1px solid #448E1F;
   
-  }
+  } */
   .button6{
     /* Rectangle 630 */
   
   position: absolute;
   width: 123px;
-  height: 41px;
+  height: 33px;
   left: 1218px;
-  top: 834px;
-  
+  top: 595px;
+  color: #FFFFFF;
   background: linear-gradient(180deg, #014762 0%, #448E1F 100%);
   border-radius: 30.5px;
   
@@ -675,8 +679,8 @@
   height: 55px;
   left: 15px;
   top: 65px;
-  
-  background: url(../../assets/logo.png);
+ 
+  background-size: contain;
   
   }
   .settings{
@@ -688,7 +692,9 @@
   left: 21px;
   top: 174px;
   
-  background: url(../../assets/settings.png);
+ 
+  background-size: contain;
+  
   
   }
   .user{
@@ -697,10 +703,12 @@
   position: absolute;
   width: 44px;
   height: 48px;
-  left: 1349px;
+  left: 1299px;
   top: 64px;
+  border: none;
   
-  background: url(../../assets/user.png);
+  background-size: contain;
+  
   
   }
   .scroll{

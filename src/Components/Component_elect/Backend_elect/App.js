@@ -92,7 +92,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 // Unified endpoint for data entry and viewing all data
-app.route('/purchasedelectricityDataentry')
+app.route('/purchasedelectricity')
   .get((req, res) => {
     const dataEntries = readDataEntries();
 
@@ -141,7 +141,7 @@ app.route('/purchasedelectricityDataentry')
   });
 
 // PUT endpoint for updating data entry
-app.put('/purchasedelectricityDataentry/:id', (req, res) => {
+app.put('/purchasedelectricity/:id', (req, res) => {
   const { id } = req.params;
   const { reportingYear, month, facilityCode, facilityName, typeofElectricity, quantity, units } = req.body;
 

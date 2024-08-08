@@ -2,6 +2,7 @@ import { useCallback,useState ,useContext} from "react";
 import PropTypes from "prop-types";
 import {cart9,datamanagement1,datamanagement2,Group,datamanagement3,datamanagement4,left,next1,next2,user,whiteVariation,vector11,vector13,vectormiddle} from "./../../assets_upstream"
 import { useNavigate } from 'react-router-dom';
+import ProgressBarupstream from "./Upstream_SubComponent/ProgressBarupstream";
 import { AuthContext } from '../contextProvider/AuthContext';;
 
 const UpstreamEmissionsHome = ({ className = "" }) => {
@@ -54,8 +55,8 @@ const handlePrevious = () => {
 
   return (
 
-    <div> 
-     {auth.isAuthenticated ? (
+    <div>
+    {auth.isAuthenticated ? (
     <div className={`upstream-emissions-home-up-hm ${className}`}>
     
       <div className="upstream-emissions-home-child-up-hm" />
@@ -122,147 +123,57 @@ const handlePrevious = () => {
         <div className="mtco2-up-hm">MTCO2</div>
         <div className="group-inner-up-hm" />
       </div>
-      <div className="upstream-emissions-home-item-up-hm" />
-      <div className="upstream-emissions-home-inner-up-hm" />
-      <div className="rectangle-div-up-hm" />
-      <div className="upstream-emissions-home-child1-up-hm" />
-      <div className="upstream-emissions-home-child2-up-hm" />
-      <div className="upstream-emissions-home-child3-up-hm" />
-      <div className="upstream-emissions-home-child4-up-hm" />
-      <div className="upstream-emissions-home-child5-up-hm" />
-      <div className="upstream-emissions-home-child6-up-hm" />
-      <div className="upstream-emissions-home-child7-up-hm" />
-      <div className="upstream-emissions-home-child8-up-hm" />
-      <div className="upstream-emissions-home-child9-up-hm" />
+      <div className="checkbox-row-0" >
+      <ProgressBarupstream progress={60} />
+      </div>
       <div className="container-up-hm">
       <div className="facility-1-up-hm">Facility 1</div>
       <div className="line-div-up-hm" />
-      <div className="upstream-emissions-home-child10-up-hm" />
-      <div className="upstream-emissions-home-child11-up-hm" />
-      <div className="upstream-emissions-home-child12-up-hm" />
-      <div className="upstream-emissions-home-child13-up-hm" />
-      <div className="upstream-emissions-home-child14-up-hm" />
-      <div className="upstream-emissions-home-child15-up-hm" />
-      <div className="upstream-emissions-home-child16-up-hm" />
-      <div className="upstream-emissions-home-child17-up-hm" />
-      <div className="upstream-emissions-home-child18-up-hm" />
-      <div className="upstream-emissions-home-child19-up-hm" />
-      <div className="upstream-emissions-home-child20-up-hm" />
-      <div className="upstream-emissions-home-child21-up-hm" />
+      <div className="checkbox-row-1"  >
+      <ProgressBarupstream progress={30} />
+      </div>
       <div className="facility-2-up-hm">Facility 2</div>
       <div className="facility1-div-up-hm">
       <div className="upstream-emissions-home-child22-up-hm" />
-      <div className="upstream-emissions-home-child23-up-hm" />
-      <div className="upstream-emissions-home-child24-up-hm" />
-      <div className="upstream-emissions-home-child25-up-hm" />
-      <div className="upstream-emissions-home-child26-up-hm" />
-      <div className="upstream-emissions-home-child27-up-hm" />
-      <div className="upstream-emissions-home-child28-up-hm" />
-      <div className="upstream-emissions-home-child29-up-hm" />
-      <div className="upstream-emissions-home-child30-up-hm" />
-      <div className="upstream-emissions-home-child31-up-hm" />
-      <div className="upstream-emissions-home-child32-up-hm" />
-      <div className="upstream-emissions-home-child33-up-hm" />
-      <div className="upstream-emissions-home-child34-up-hm" />
+      <div className="checkbox-row-2"  >
+      <ProgressBarupstream progress={90} />
+      </div>
       </div>
       <div className="facility-3-up-hm">Facility 3</div>
       <div className="upstream-emissions-home-child35-up-hm" />
-      <div className="upstream-emissions-home-child36-up-hm" />
-      <div className="upstream-emissions-home-child37-up-hm" />
-      <div className="upstream-emissions-home-child38-up-hm" />
-      <div className="upstream-emissions-home-child39-up-hm" />
-      <div className="upstream-emissions-home-child40-up-hm" />
-      <div className="upstream-emissions-home-child41-up-hm" />
-      <div className="upstream-emissions-home-child42-up-hm" />
-      <div className="upstream-emissions-home-child43-up-hm" />
-      <div className="upstream-emissions-home-child44-up-hm" />
-      <div className="upstream-emissions-home-child45-up-hm" />
-      <div className="upstream-emissions-home-child46-up-hm" />
-      <div className="upstream-emissions-home-child47-up-hm" />
+      <div className="checkbox-row-3"  >
+      <ProgressBarupstream progress={40} />
+      </div>
       <div className="facility-4-up-hm">Facility 4</div>
       <div className="upstream-emissions-home-child48-up-hm" />
-      <div className="upstream-emissions-home-child49-up-hm" />
-      <div className="upstream-emissions-home-child50-up-hm" />
-      <div className="upstream-emissions-home-child51-up-hm" />
-      <div className="upstream-emissions-home-child52-up-hm" />
-      <div className="upstream-emissions-home-child53-up-hm" />
-      <div className="upstream-emissions-home-child54-up-hm" />
-      <div className="upstream-emissions-home-child55-up-hm" />
-      <div className="upstream-emissions-home-child56-up-hm" />
-      <div className="upstream-emissions-home-child57-up-hm" />
-      <div className="upstream-emissions-home-child58-up-hm" />
-      <div className="upstream-emissions-home-child59-up-hm" />
-      <div className="upstream-emissions-home-child60-up-hm" />
+      <div className="checkbox-row-4"  >
+      <ProgressBarupstream progress={70} />
+      </div>
       <div className="facility-5-up-hm">Facility 5</div>
       <div className="upstream-emissions-home-child61-up-hm" />
-      <div className="upstream-emissions-home-child62-up-hm" />
-      <div className="upstream-emissions-home-child63-up-hm" />
-      <div className="upstream-emissions-home-child64-up-hm" />
-      <div className="upstream-emissions-home-child65-up-hm" />
-      <div className="upstream-emissions-home-child66-up-hm" />
-      <div className="upstream-emissions-home-child67-up-hm" />
-      <div className="upstream-emissions-home-child68-up-hm" />
-      <div className="upstream-emissions-home-child69-up-hm" />
-      <div className="upstream-emissions-home-child70-up-hm" />
-      <div className="upstream-emissions-home-child71-up-hm" />
-      <div className="upstream-emissions-home-child72-up-hm" />
-      <div className="upstream-emissions-home-child73-up-hm" />
+      <div className="checkbox-row-5"  >
+      <ProgressBarupstream progress={20} />
+      </div>
       <div className="facility-6-up-hm">Facility 6</div>
       <div className="upstream-emissions-home-child74-up-hm" />
-      <div className="upstream-emissions-home-child75-up-hm" />
-      <div className="upstream-emissions-home-child76-up-hm" />
-      <div className="upstream-emissions-home-child77-up-hm" />
-      <div className="upstream-emissions-home-child78-up-hm" />
-      <div className="upstream-emissions-home-child79-up-hm" />
-      <div className="upstream-emissions-home-child80-up-hm" />
-      <div className="upstream-emissions-home-child81-up-hm" />
-      <div className="upstream-emissions-home-child82-up-hm" />
-      <div className="upstream-emissions-home-child83-up-hm" />
-      <div className="upstream-emissions-home-child84-up-hm" />
-      <div className="upstream-emissions-home-child85-up-hm" />
-      <div className="upstream-emissions-home-child86-up-hm" />
+      <div className="checkbox-row-6"  >
+      <ProgressBarupstream progress={120} />
+      </div>
       <div className="facility-7-up-hm">Facility 7</div>
       <div className="upstream-emissions-home-child87-up-hm" />
-      <div className="upstream-emissions-home-child88-up-hm" />
-      <div className="upstream-emissions-home-child89-up-hm" />
-      <div className="upstream-emissions-home-child90-up-hm" />
-      <div className="upstream-emissions-home-child91-up-hm" />
-      <div className="upstream-emissions-home-child92-up-hm" />
-      <div className="upstream-emissions-home-child93-up-hm" />
-      <div className="upstream-emissions-home-child94-up-hm" />
-      <div className="upstream-emissions-home-child95-up-hm" />
-      <div className="upstream-emissions-home-child96-up-hm" />
-      <div className="upstream-emissions-home-child97-up-hm" />
-      <div className="upstream-emissions-home-child98-up-hm" />
-      <div className="upstream-emissions-home-child99-up-hm" />
+      <div className="checkbox-row-7"  >
+      <ProgressBarupstream progress={10} />
+      </div>
       <div className="facility-8-up-hm">Facility 8</div>
       <div className="upstream-emissions-home-child100-up-hm" />
-      <div className="upstream-emissions-home-child101-up-hm" />
-      <div className="upstream-emissions-home-child102-up-hm" />
-      <div className="upstream-emissions-home-child103-up-hm" />
-      <div className="upstream-emissions-home-child104-up-hm" />
-      <div className="upstream-emissions-home-child105-up-hm" />
-      <div className="upstream-emissions-home-child106-up-hm" />
-      <div className="upstream-emissions-home-child107-up-hm" />
-      <div className="upstream-emissions-home-child108-up-hm" />
-      <div className="upstream-emissions-home-child109-up-hm" />
-      <div className="upstream-emissions-home-child110-up-hm" />
-      <div className="upstream-emissions-home-child111-up-hm" />
-      <div className="upstream-emissions-home-child112-up-hm" />
+      <div className="checkbox-row-8"  >
+      <ProgressBarupstream progress={60} />
+      </div>
       <div className="facility-9-up-hm">Facility 9</div>
       <div className="upstream-emissions-home-child113-up-hm" />
-      <div className="upstream-emissions-home-child114-up-hm" />
-      <div className="upstream-emissions-home-child115-up-hm" />
-      <div className="upstream-emissions-home-child116-up-hm" />
-      <div className="upstream-emissions-home-child117-up-hm" />
-      <div className="upstream-emissions-home-child118-up-hm" />
-      <div className="upstream-emissions-home-child119-up-hm" />
-      <div className="upstream-emissions-home-child120-up-hm" />
-      <div className="upstream-emissions-home-child121-up-hm" />
-      <div className="upstream-emissions-home-child122-up-hm" />
-      <div className="upstream-emissions-home-child123-up-hm" />
-      <div className="upstream-emissions-home-child124-up-hm" />
-      <div className="upstream-emissions-home-child125-up-hm" />
+      <div className="checkbox-row-9"  >
+      <ProgressBarupstream progress={100} />
+      </div>
       <div className="facility-10-up-hm">Facility 10</div>
       </div>
       <div className="upstream-emissions-home-child126-up-hm" />
@@ -300,9 +211,10 @@ const handlePrevious = () => {
       
     </div>
   ) : (
-        <p>You are not logged in.</p>
-      )}
-    </div>
+      <p>You are not logged in.</p>
+    )}
+  </div>
+  
   );
 };
 

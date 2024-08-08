@@ -12,6 +12,20 @@ const DataEntrySC = () => {
         month: '',
         facilityCode: '',
         facilityName: '',
+          email: "suman@gmail.com", 
+         emissions: 3500,
+         emissionType: "Mobile Combustion",
+         responsibility: "John Doe",
+         status: 1,
+         button: {
+           "text": "Submit",
+           "action": "submitForm"
+         }
+         
+     
+     
+     
+     
     });
     const navigate = useNavigate();
     const handleViewDataSC = () => {
@@ -105,40 +119,49 @@ const DataEntrySC = () => {
       const rowData = rows[index];
       const data = {
           ...formData,
-          ...rowData
+          
+          ...rowData,
+          responsibility: formData.responsibility,
+    status: formData.status,
+    button: formData.button,
+    email: formData.email,
+    emissions: formData.emissions,
+    
       };
   
       try {
-          // Upload file if selected
-          if (rowData.file) {
-              const formData = new FormData();
-              formData.append('file', rowData.file);
-              formData.append('fileName', rowData.file.name);
-  
-              // Upload file and get the fileUrl
-              const response = await axios.post('http://127.0.0.1:8080/upload', formData);
-              if (response.status === 200) {
-                  const { fileUrl } = response.data;
-                  data.fileUrl = fileUrl;
-  
-                  // Update the fileUrl and fileName in rows
-                  const updatedRows = [...rows];
-                  updatedRows[index].fileUrl = fileUrl;
-                  updatedRows[index].fileName = rowData.file.name; // Ensure fileName is set
-                  setRows(updatedRows);
-  
-                  // Submit data entry with fileUrl
-                  await axios.post('http://127.0.0.1:8080/stationarycombustiondataentry', data);
-                  console.log('Data entry submitted successfully for row', index);
-              }
-          } else {
-              // Submit data entry without fileUrl
-              await axios.post('http://127.0.0.1:8080/stationarycombustiondataentry', data);
-              console.log('Data entry submitted successfully for row', index);
-          }
-      } catch (error) {
-          console.error('Error submitting data entry for row', index, ':', error);
-      }
+        // Upload file if selected
+        if (rowData.file) {
+            const formData = new FormData();
+            formData.append('file', rowData.file);
+            formData.append('fileName', rowData.file.name);
+    
+            // Upload file and get the fileUrl
+            const response = await axios.post('https://backend-new-419p.onrender.com/stationarycombustion', data);
+            console.log(response,"Stationaryyyyyyyyyyyyc datasssssssssssssss")
+            if (response.status === 200) {
+                const { fileUrl } = response.data;
+                data.fileUrl = fileUrl;
+    
+                // Update the fileUrl and fileName in rows
+                const updatedRows = [...rows];
+                updatedRows[index].fileUrl = fileUrl;
+                updatedRows[index].fileName = rowData.file.name; // Ensure fileName is set
+                setRows(updatedRows);
+    
+                // Submit data entry with fileUrl
+                await axios.post('https://backend-new-419p.onrender.com/stationarycombustion', data);
+                console.log('Data entry submitted successfully for row', index);
+            }
+        } else {
+            // Submit data entry without fileUrl
+            await axios.post('https://backend-new-419p.onrender.com/stationarycombustion', data);
+            console.log('Data entry submitted successfully for row', index);
+        }
+    } catch (error) {
+        console.error('Error submitting data entry for row', index, ':', error);
+    }
+    
   };
   
 
@@ -298,6 +321,7 @@ const DataEntrySC = () => {
       {/* <div className="distance">Distance</div> */}
       <div className="month1-sc-de">Month</div>
       <div className="div16-sc-de">1423</div>
+
       <div className="mtco21-sc-de">MTCO2</div>
       <img className="cart-12-icon1-sc-de" alt="" src={Cart} />
       <b className="mobile-combustion1-sc-de">STATIONARY COMBUSTION</b>
@@ -337,10 +361,10 @@ const DataEntrySC = () => {
       </buton>
     </form>
     </div>
-     ) : (
-      <p>You are not logged in.</p>
-    )}
-  </div>
+   ) : (
+    <p>You are not logged in.</p>
+  )}
+</div>
     );
 };
 

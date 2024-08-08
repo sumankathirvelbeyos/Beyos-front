@@ -3,6 +3,10 @@ import React, { useState,useContext } from 'react';
 import '../../App.css'; // Ensure this is imported to use the styles
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contextProvider/AuthContext';
+import addIcon from "./addIcon.png";
+import user from "../../assets/userIcon.png"
+import logo from "../../assets/logo.png";
+import settings from "../../assets/settings.png"
 const FacilityDeclarationPage = () => {
   // eslint-disable-next-line
   const { auth, logout } = useContext(AuthContext);
@@ -13,8 +17,12 @@ const FacilityDeclarationPage = () => {
 
 const handleEmissionmanagementHome = () => {
   navigate('/emission');
-};
+}; 
+const logonavigate=()=>{
+  navigate('/landingpage')
+}
   const [formData,setFormData]=useState({
+    email:'aswath@gmail.com',
     input1:'',
     input2:'',
     input3:'',
@@ -54,7 +62,7 @@ const handleEmissionmanagementHome = () => {
     try{
     e.preventDefault();
       const data = {
-        "email": "sumand1@gmail.com"
+        "email": "aswath@gmail.com"
     };
     
     fetch('https://backend-new-419p.onrender.com/facilitydeclaration', {
@@ -82,7 +90,7 @@ const handleEmissionmanagementHome = () => {
   return (
     <div>
     {auth.isAuthenticated ? (
-    <div >
+    <div className="container">
       <h1 className={styles.beyoss}>BeyOS</h1>
       <div className={styles.rectangle}></div>
       <div className={styles.facilityname}>FACILITY NAME</div>
@@ -90,9 +98,9 @@ const handleEmissionmanagementHome = () => {
       <div className={styles.country}>COUNTRY</div>
       <div className={styles.latitude}>LATITUDE</div>
       <div className={styles.longitude}>LONGITUDE</div>
-      <img className={styles.logo} alt=""/>
-      <img className={styles.settings} alt=""/>
-      <img className={styles.user} alt=""/>
+      <img className={styles.logo} alt="" src={logo} onClick={logonavigate}/>
+      <img className={styles.settings} alt="" src={settings}/>
+      <img className={styles.user} alt=" " src={user}/>
       <div className={styles.scroll}></div>
       <div className={styles.scroll2}></div>
       <input
@@ -136,8 +144,8 @@ const handleEmissionmanagementHome = () => {
         onChange={handleInputChange}
       />
       <button
-        className={styles.button1}
-      >CONFIGURE ASSETS</button>
+        className={styles.button1} onClick={handleghg1}
+      ><img className="addimage" src={addIcon} alt=" " />      CONFIGURE ASSETS</button>
       <div className={styles.line1}></div>
 
       <input
@@ -181,8 +189,8 @@ const handleEmissionmanagementHome = () => {
         onChange={handleInputChange}
       />
       <button
-        className={styles.button2}
-      >CONFIGURE ASSETS</button>
+        className={styles.button2} onClick={handleghg1}
+      ><img className="addimage" src={addIcon} alt=" " />      CONFIGURE ASSETS</button>
       <div className={styles.line2}></div>
 
       <input
@@ -226,8 +234,8 @@ const handleEmissionmanagementHome = () => {
         onChange={handleInputChange}
       />
       <button
-        className={styles.button3}
-      >CONFIGURE ASSETS</button>
+        className={styles.button3} onClick={handleghg1}
+      ><img className="addimage" src={addIcon} alt=" " />    CONFIGURE ASSETS</button>
       <div className={styles.line3}></div>
 
       <input
@@ -272,53 +280,11 @@ const handleEmissionmanagementHome = () => {
       />
       <button
         className={styles.button4} onClick={handleghg1}
-      >CONFIGURE ASSETS</button>
+      > <img className="addimage" src={addIcon} alt=" "/>    CONFIGURE ASSETS
+        
+      </button>
       <div className={styles.line4}></div>
 
-      <input
-        className={styles.facilityname5}
-        type='text'
-        name='input21'
-        placeholder="Enter Facility Name"
-        value={formData.input21}
-        onChange={handleInputChange}
-      />
-      <input
-        className={styles.facilityid5}
-        type='text'
-        name='input22'
-        placeholder="Enter Facility ID"
-        value={formData.input21}
-        onChange={handleInputChange}
-      />
-      <input
-        className={styles.country5}
-        type='text'
-        name='input23'
-        placeholder="Select Country"
-        value={formData.input18}
-        onChange={handleInputChange}
-      />
-      <input
-        className={styles.latitude5}
-        type='text'
-        name='input24'
-        placeholder="Enter Latitude"
-        value={formData.input24}
-        onChange={handleInputChange}
-      />
-      <input
-        className={styles.longitude5}
-        type='text'
-        name='input25'
-        placeholder="Enter Longitude"
-        value={formData.input25}
-        onChange={handleInputChange}
-      />
-      <button
-        className={styles.button5}
-      >CONFIGURE ASSETS</button>
-      <div className={styles.line5}></div>
       <div onClick={handleEmissionmanagementHome}>
       <button className={styles.button6} onClick={handleSubmit}>NEXT</button>
       </div>
